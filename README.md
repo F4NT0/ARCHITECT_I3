@@ -49,8 +49,8 @@
     * For Regular: `Urxvt.font:    xft:xos4 Terminus:style=Regular:size=14`
 * Change Background: Background Color is #191919
     * On the .Xresources: `Urxvt.background: [100]#191919`
-
-
-### WALLPAPER
-
-* 
+* Make Terminal Transparent:
+    * On the .Xresources: 
+	* `Urxvt.transparent: true`
+        
+	* `Urxvt.shading: 20` 

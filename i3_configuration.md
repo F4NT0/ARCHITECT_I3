@@ -23,3 +23,7 @@ colors{
 }
 
 ```
+
+### Make i3-gaps round
+
+
