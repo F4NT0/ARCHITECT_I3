@@ -15,14 +15,14 @@
 | Ranger | GUI look on directories from terminal(to exit press <kbd>Q</kbd>)|ranger|**~/.config/ranger/rc.conf**
 | Scrot  | screenshot the scren from terminal | scrot -d 10 (10 seconds to take screenshot)| None 
 | Nitrogen | To change the wallpaper from Desktop | nitrogen directory/with/images | None
-| Compton  | To make the Shells transparent |<kbd>Mod4</kbd> + <kbd>Ctrl</kbd> + <kbd>T</kbd> | **~/.config/compton.conf**
+| Picom  | To make the Shells transparent | picom | **~/.config/picom.conf**
 
 ### PROGRAMS INSTALLED
 
 | Name | Use for |Download Command| Command | Config File Location
 |---|---|---|---|
 | Firefox| firefox web-search | sudo pacman -S firefox | <kbd>Mod4</kbd> + <kbd>F2</kbd> or <kbd>Mod4</kbd> + <kbd>D</kbd> + firefox | None
-| QuteBrowser | sudo pacman -S qutebrowser | 
+| QuteBrowser | sudo pacman -S qutebrowser | <kbd>Mod4</kbd> + <kbd>F2</kbd>|**~/.config/qutebrowser/config.py**
 
 ### FONT
 
@@ -83,3 +83,27 @@
 	url sucess color: Green: #008000
 
 * CONFIGURATION FILE EXAMPLE: it's in the qutebrowser Directory	 
+
+
+### PICOM
+
+* Picom is to make the Terminal Transparent
+* INSTALLATION: `sudo pacman -S picom`
+* CONFIGURATION FILE:
+	* Move the file _picom.conf_ from **/etc/xdg/** to **~/.config/**
+	* Move the file _picon.conf.example_ from **/etc/xdg/** to **~/.config/**
+
+* CONFIGURATION ON PICOM CONF:
+	* blur-background-frame = true;
+	* inactive-opacity = 1;
+	* active-opacity = 1;
+	* frame-opacity = 1;
+	* opacity-rule = ["90:class_g = 'URxvt'","90:class_g = 'qutebrowser'"]
+
+* TEST CONFIGURATION:
+	* `picom --config ~/.config/picom.conf`
+
+* CONFIGURATION ON I3: 
+	* Insert on the config file from i3 = `exec --no-startup-id picom`
+	* Restart the System: Mod4 + SHIFT + E
+
