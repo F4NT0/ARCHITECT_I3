@@ -6,19 +6,18 @@
 |---|---|---|---|
 | Ranger | GUI look on directories from terminal(to exit press <kbd>Q</kbd>)|ranger|**~/.config/ranger/rc.conf**
 | Scrot  | screenshot the scren from terminal | scrot -d 10 (10 seconds to take screenshot)| None 
-
+| Nitrogen | To change the wallpaper from Desktop | nitrogen directory/with/images | None
 
 ### PROGRAMS INSTALLED
 
 | Name | Use for |Download Command| Command | Config File Location
 |---|---|---|---|
-| Feh | Change i3 wallpaper| sudo pacman -S feh | [on i3 file config] exec --no-startup-id feh --bg-fill (path/to/image)|**~/.i3/config**
 | Firefox| firefox web-search | sudo pacman -S firefox | firefox | None
 
 
 ### FONT
 
-* The Font is Terminus, on [This Folder]() is all the Directory from this Font.
+* The Font is Terminus, on [This Folder](Terminus_Font) is all the Directory from this Font.
 * How to install the Font:
    * Unzip the Folder on your Downloads Folder: `tar -xzvf terminus-font-4.48.tar.gz`
    * `./configure /etc/fonts`
@@ -48,4 +47,10 @@
 * Restarting Configuration file: `xrdb ~/.Xresources`
 * Change font for my favorite on the file:
     * For Regular: `Urxvt.font:    xft:xos4 Terminus:style=Regular:size=14`
+* Change Background: Background Color is #191919
+    * On the .Xresources: `Urxvt.background: [100]#191919`
 
+
+### WALLPAPER
+
+* 
