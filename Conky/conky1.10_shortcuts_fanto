@@ -3,7 +3,7 @@ conky.config = {
 	background = true,
 	color2 = 'E5E5E5',
 	cpu_avg_samples = 2,
-	default_color = '800080',
+	default_color = 'B266B2',
 	double_buffer = true,
 	font = 'Bitstream Vera Sans:size=8',
 	draw_shades = false,
@@ -18,19 +18,18 @@ conky.config = {
 	use_xft = true,
 }
 conky.text = [[
-${color2}open new terminal - ${color}mod+Enter
-${color2}kill focused - ${color}mod+Shift+q
-${color2}open browser - ${color}mod+F2
-${color2}toggle split direction - ${color}mod+q
-${color2}dmenu - ${color}mod+d
-${color2}bmenu - ${color}mod+Ctrl+b
-${color2}morc_menu - ${color}mod+z
-${color2}switch to workspace 1-8 - ${color}mod+1-8
-${color2}send to workspace 1-8 - ${color}mod+Ctrl+1-8
-${color2}navigate workspaces - ${color}mod+Ctrl+arrowkeys
-${color2}toggle floating - ${color}mod+Shift+Space
-${color2}exit - ${color}mod+0
-
+${color2}Open new Shell CLI - ${color}Mod4+Enter
+${color2}kill focused Window - ${color}Mod4+Shift+q
+${color2}Open QuteBrowser - ${color}Mod4+F2
+${color2}Open Shell on Vertical - ${color}Mod4+v+Mod4+Enter
+$(color2)Open Shell on Horizontal = $()colorMod4+h+Mod4+Enter
+${color2}dmenu (Program Selection) - ${color}Mod4+d
+${color2}Resize Shell Panel - ${color}Mod4+r
+${color2}switch to workspace 1-8 - ${color}Mod4+1-8
+${color2}send to workspace 1-8 - ${color}Mod4+Ctrl+1-8
+${color2}navigate workspaces - ${color}Mod4+Ctrl+arrowkeys
+${color2}toggle floating - ${color}Mod4+Shift+Space
+${color2}exit - ${color}Mod4+0
 ${color2}help - ${color}mod+Shift+h
 default mod=<Super>
 ]]
