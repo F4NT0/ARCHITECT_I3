@@ -23,7 +23,40 @@ colors{
 }
 
 ```
+### TRANSPARENCY ON SHELL
 
-### Make i3-gaps round
+```sh
+# Picom 
+exec --no-startup-id picom
+```
+
+### MAKE QUTEBROWSER THE MAIN BROWSER
+
+```sh
+bindsym $mod+F2 exec qutebrowser
+```
+
+
+### CHANGE i3 status bar colors
+
+* Configuration file: **/etc/i3status.conf**
+* Color Changes:
+    * color_good = "#008000"
+    * color_bad  = "#FF0000"
+    * color_degraded = "#FFFF00"
+* Now the rest is change on **~/.i3/config**
+    * Background is Dark Gray
+    * Status Line is Light Purple
+    * Separator is green
+	
+```sh 
+colors{
+   background #191919
+   statusline #B266B2 
+   separator  #008000
+
+}
+```
+
 
 

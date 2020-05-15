@@ -8,7 +8,7 @@
 
 
 
-### PROGRAMS ALREADY INSTALLED
+### PROGRAMS I USE
 
 | Name | Use for | Command | Config File Location
 |---|---|---|---|
@@ -16,12 +16,7 @@
 | Scrot  | screenshot the scren from terminal | scrot -d 10 (10 seconds to take screenshot)| None 
 | Nitrogen | To change the wallpaper from Desktop | nitrogen directory/with/images | None
 | Picom  | To make the Shells transparent | picom | **~/.config/picom.conf**
-
-### PROGRAMS INSTALLED
-
-| Name | Use for |Download Command| Command | Config File Location
-|---|---|---|---|
-| Firefox| firefox web-search | sudo pacman -S firefox | <kbd>Mod4</kbd> + <kbd>F2</kbd> or <kbd>Mod4</kbd> + <kbd>D</kbd> + firefox | None
+| Conky | Showing information on Desktop | sudo pacman -S conky-all |  
 | QuteBrowser | sudo pacman -S qutebrowser | <kbd>Mod4</kbd> + <kbd>F2</kbd>|**~/.config/qutebrowser/config.py**
 
 ### FONT
@@ -107,3 +102,27 @@
 	* Insert on the config file from i3 = `exec --no-startup-id picom`
 	* Restart the System: Mod4 + SHIFT + E
 
+### CONKY CONFIGURATION
+
+* The themes from Conky on Manjary is in **/usr/share/conky**
+* The _conky1.10__shortcuts_themeName_ is themes from the Shortcut
+* The _conky_themeName_ is the theme from the information on the screen
+* After doing this two files, on the **/usr/bin** create a **start_conky_themeName**
+* Call the files like that:
+
+```sh
+#!/bin/bash
+
+conky -c /usr/share/conky/conky1.10_shortcuts_themeName &&
+conky -c /usr/share/conky/conky_themeName &&
+exit 0
+```
+* Make this file Runnable: chmod +x start_conky_themeName
+
+* Call this file on our i3 config file: **~/.i3/config**
+
+```sh
+exec --no-startup-id start_conky_themeName
+```
+
+* My configuration is in **Conky** Directory
