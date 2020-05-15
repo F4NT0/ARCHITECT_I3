@@ -63,3 +63,23 @@
 	* `Urxvt.transparent: true`
         
 	* `Urxvt.shading: 20` 
+
+### QUTEBROWSER
+
+* Lightest Browser to i3
+* INSTALLATION: sudo pacman -S qutebrowser
+* CREATING CONFIGURATION FILE: 
+	* The file to config is called `config.py` and needed to be created
+	* The location to create is: **~/.config/qutebrowser/config.py**
+	* When you complete the configuration, on the qutebrowser insert the following command: `:config-source`
+	* You can create a default config.py using the command on qutebrowser: `:config-write-py --defaults`
+
+
+* COLORS:
+	Main Color: Purple: #800080
+	Second Color: Dark Gray: #191919
+	Text Color: White: #e5e5e5
+        url Color: Light Blue: #ADD8e6
+	url sucess color: Green: #008000
+
+* CONFIGURATION FILE EXAMPLE: it's in the qutebrowser Directory	 
