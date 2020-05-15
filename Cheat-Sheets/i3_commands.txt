@@ -1,0 +1,93 @@
+	 _   _____ 
+	(_) |___  / 
+	| |   |_  \ 
+	| |  ___) |
+	|_| |_____/
+
+
+i3 is a Window Manager(WM) to use on Linux Distros
+
+GLOSSARY: Mod4 is the Windows logo on the Keyboard 
+
+	BASIC COMMANDS ON THE I3
+ _________________________________________________
+| 	COMMAND          |      USE FOR           |
+|------------------------|------------------------|
+| Mod4 + ENTER           | Open a new Shell CLI   |
+|------------------------|------------------------|
+| Mod4 + J or            | Focus on Left Shell    |
+| Mod4 + Arrow Left      |                        |
+|------------------------|------------------------|
+| Mod4 + ;               | Focus on Right Shell   |
+| Mod4 + Arrow Right     |                        |
+|------------------------|------------------------|
+| Mod4 + K               | Focus on Down Shell    |
+| Mod4 + Arrow Down      |                        |
+|------------------------|------------------------|
+| Mod4 + L               | Focus on Upper Shell   |
+| Mod4 + Arrow Up        |                        |        
+|------------------------|------------------------|
+| Mod4 + SpaceBar        | Toggle Focus Mode      |
+|________________________|________________________|
+
+	  
+            COMMANDS OF MOVING WINDOWS
+ __________________________________________________
+| 	COMMAND          |          USE FOR        |
+|------------------------|-------------------------|
+| Mod4 + SHIFT + J       | Move Window to Left     |
+|------------------------|-------------------------|
+| Mod4 + SHIFT + ;       | Move Window to Right    |
+|------------------------|-------------------------|
+| Mod4 + SHIFT + K       | Move Window to Down     |
+|------------------------|-------------------------|
+| Mod4 + SHIFT + L       | Move WIndow to Up       |
+|________________________|_________________________|
+
+       COMMANDS TO OPEN/CLOSE AND RESTART/EXIT
+ ___________________________________________________
+|       COMMAND          |        USE FOR           |
+|------------------------|--------------------------|
+| Mod4 + D               | Open Application Launcher|
+|------------------------|--------------------------|
+| Mod4 + SHIFT + Q       | Kill the actual Window   |
+|------------------------|--------------------------|
+| Mod4 + SHIFT + C       | Reload the i3 Config File|
+|------------------------|--------------------------|
+| Mod4 + SHIFT + E       | Exit i3 totally          |
+|------------------------|--------------------------|
+| Mod4 + SHIFT + R       | Restart i3 totally       |
+|________________________|__________________________|
+
+       	COMMAND TO MODIFY WINDOWS
+ ____________________________________________________
+|       COMMAND          |            USE FOR        |
+|------------------------|---------------------------|
+| Mod4 + F               |  Toggle Fullscreen        |
+|------------------------|---------------------------|
+| Mod4 + V               | Split Window Vertically   |
+|------------------------|---------------------------|
+| Mod4 + H               | Split Window Horizontally |
+|------------------------|---------------------------|
+| Mod4 + R               | Resize Mode to Window     |
+|________________________|___________________________|
+
+	COMMAND TO FLOATING WINDOWS
+ _____________________________________________________
+|     COMMAND            |         USE FOR            |
+|------------------------|----------------------------|
+| Mod4 + SHIFT + SpaceBar|      Toggle Floating       |
+|------------------------|----------------------------|
+| Mod4 + MOUSE           | Drag the Floating Window   |
+|________________________|____________________________|
+
+	COMMAND TO CREATE/DEFINE WORKSPACES
+ _____________________________________________________
+|     COMMAND            |         USE FOR            |
+|------------------------|----------------------------|
+| Mod4 + Number          | Create/Switch to other     |
+|                        | Workspace                  |
+|------------------------|----------------------------|
+| Mod4 + SHIFT + 0-9     | Move Window to another     |
+|                        | Workspace                  |
+|________________________|____________________________| 

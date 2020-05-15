@@ -1,5 +1,13 @@
 # CREATING AND CONFIGURING AN MANJARO I3
 
+### MY CHEAT-SHEETS
+
+* [TMUX]()
+* [I3 COMMANDS]()
+* [QUTEBROWSER]()
+
+
+
 ### PROGRAMS ALREADY INSTALLED
 
 | Name | Use for | Command | Config File Location
@@ -7,13 +15,14 @@
 | Ranger | GUI look on directories from terminal(to exit press <kbd>Q</kbd>)|ranger|**~/.config/ranger/rc.conf**
 | Scrot  | screenshot the scren from terminal | scrot -d 10 (10 seconds to take screenshot)| None 
 | Nitrogen | To change the wallpaper from Desktop | nitrogen directory/with/images | None
+| Compton  | To make the Shells transparent |<kbd>Mod4</kbd> + <kbd>Ctrl</kbd> + <kbd>T</kbd> | **~/.config/compton.conf**
 
 ### PROGRAMS INSTALLED
 
 | Name | Use for |Download Command| Command | Config File Location
 |---|---|---|---|
-| Firefox| firefox web-search | sudo pacman -S firefox | firefox | None
-
+| Firefox| firefox web-search | sudo pacman -S firefox | <kbd>Mod4</kbd> + <kbd>F2</kbd> or <kbd>Mod4</kbd> + <kbd>D</kbd> + firefox | None
+| QuteBrowser | sudo pacman -S qutebrowser | 
 
 ### FONT
 
@@ -49,7 +58,7 @@
     * For Regular: `Urxvt.font:    xft:xos4 Terminus:style=Regular:size=14`
 * Change Background: Background Color is #191919
     * On the .Xresources: `Urxvt.background: [100]#191919`
-* Make Terminal Transparent:
+* Make Terminal Transparent: (ONLY WHEN COMPTON DOESN'T WORK)
     * On the .Xresources: 
 	* `Urxvt.transparent: true`
         

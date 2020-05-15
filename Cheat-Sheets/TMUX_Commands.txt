@@ -1,0 +1,37 @@
+ _____   __  __   _   _  __  __
+|_   _| |  \/  | | | | | \ \/ /
+  | |   | |\/| | | | | |  \  /
+  | |   | |  | | | |_| |  /  \
+  |_|   |_|  |_|  \___/  /_/\_\
+
+
+     BASIC COMMANDS (WINDOWS)
+ 
+-> Window are the TMUX screen from Terminal
+_________________________________________________
+|    COMMAND          |          USE TO          | 
+|---------------      |--------------------------|
+| CTRL + B + %        | Split a Vertical Window  |
+| CTRL + B + "        | Split a Horizontal Window|
+| CTRL + B + $        | Rename Actual Session    |
+| CTRL + B + ?        | TMUX Help                |
+| CTRL + B + D        | Come back to CLI, no Exit|
+| CTRL + B + C        | Create a new Screen      |
+| CTRL + B + ,        | Rename actual screen     |
+| CTRL + B + &        | Close the actual screen  |
+| CTRL + B + F + ENTER| Select what Screen to go |
+|________________________________________________|
+
+    BASIC COMMANDS (PANNELS)
+
+-> When you Split a Terminal window is called Pannel, like this one
+
+______________________________________________________________
+|    COMMAND               |            USE TO                | 
+|--------------------------|----------------------------------|
+| CTRL + B + %             | Split a Vertical Pannel          |
+| CTRL + B + "             | Split a Horizontal Pannel        |
+| CTRL + B + >/</^/v       | Use the Arrows to move in Pannels|
+| CTRL + B + Q             | Show the Pannel numbers to select|
+| CTRL + B + CTRL + >/</^/v| Resize the Actual Pannel         |
+|_____________________________________________________________|
