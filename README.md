@@ -194,3 +194,24 @@ set autoindent
 ```sh
 colorscheme <nameofthescheme>
 ```
+
+### NEOFETCH
+
+* CONFIGURATION FILE LOCATION: **~/.config/neofetch/config.conf**
+* inside this file, there is the part of the font colors
+* i putted like this:
+
+```sh
+#order: tittle,@,underline,subtittle,colon,info
+colors=(3 3 3 3 3 7)
+
+#Image source
+image_source="ascii"
+
+#Ascii Distro
+ascii_distro="Manjaro"
+
+"Ascii color
+ascii_colors(3)
+```
+* My configuration in on **Neofetch** Directory
