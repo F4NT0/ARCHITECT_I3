@@ -133,38 +133,13 @@ exec --no-startup-id start_conky_themeName
 * INSTALLATION: sudo pacman -S i3blocks
 * CONFIGURATION FILE LOCATION: **/etc/i3blocks.conf**
 
-* My Configuration:
-
-* First i create an battery script who shows the status and put on **~** Directory:
-
-```sh
-#!/bin/bash
-
-BAT=$(acpi -b | grep -E -o '[0-9][0-9]?%')
-
-# Message
-echo "Battery: $BAT"
-echo "BAT: $BAT"
-
-# Full Battery (GREEN)
-[${BAT%} -le 100] && echo "#008000"
-
-# Battery below 20% (YELLOW)
-[${BAT%} -le 20] && echo "#FFFF00"
-
-# Low Battery (RED)
-[${BAT%} -le 5] && echo "#FF0000"
-
-exit 0
-```
-* Make this script executable with `chmod +x battery.sh`
-* Now i will call this script on my i3block
+* My Configuration on i3blocks:
 
 ```sh
 #Check in 5 to 5 seconds
 [battery]
-command=~/battery.sh
-interval=5
+command=echo "Battery: $(acpi -b | grep -E -o '[0-9][0-9]?%')"
+interval=2
 ```
 
 * Check my IP
