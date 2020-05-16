@@ -8,7 +8,7 @@
 ```sh
 # Theme Color
 # class           border background text indic. child_border 
- client.focused	                                #800080 
+ client.focused	                                #FFA500
 
 ```
 * child_border is the area to change color from the border
@@ -46,13 +46,13 @@ bindsym $mod+F2 exec qutebrowser
     * color_degraded = "#FFFF00"
 * Now the rest is change on **~/.i3/config**
     * Background is Dark Gray
-    * Status Line is Light Purple
+    * Status Line is ORANGE
     * Separator is green
 	
 ```sh 
 colors{
    background #191919
-   statusline #B266B2 
+   statusline #FFA500
    separator  #008000
 
 }

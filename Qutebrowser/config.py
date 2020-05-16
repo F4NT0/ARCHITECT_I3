@@ -99,7 +99,7 @@
 
 ## Color of the scrollbar in the completion view.
 ## Type: QssColor
-c.colors.completion.scrollbar.bg = '#800080'
+c.colors.completion.scrollbar.bg = '#FFA500'
 
 ## Color of the scrollbar handle in the completion view.
 ## Type: QssColor
@@ -131,11 +131,11 @@ c.colors.completion.scrollbar.bg = '#800080'
 
 ## Background color for downloads with errors.
 ## Type: QtColor
-c.colors.downloads.error.bg = 'red'
+#c.colors.downloads.error.bg = 'red'
 
 ## Foreground color for downloads with errors.
 ## Type: QtColor
-c.colors.downloads.error.fg = 'white'
+#c.colors.downloads.error.fg = 'white'
 
 ## Color gradient start for download backgrounds.
 ## Type: QtColor
@@ -318,7 +318,7 @@ c.colors.downloads.error.fg = 'white'
 
 ## Foreground color of the URL in the statusbar on error.
 ## Type: QssColor
-c.colors.statusbar.url.error.fg = 'red'
+c.colors.statusbar.url.error.fg = '#ff0000'
 
 ## Default foreground color of the URL in the statusbar.
 ## Type: QssColor
@@ -331,7 +331,7 @@ c.colors.statusbar.url.fg = '#add8e6'
 ## Foreground color of the URL in the statusbar on successful load
 ## (http).
 ## Type: QssColor
-c.colors.statusbar.url.success.http.fg = '#008000'
+c.colors.statusbar.url.success.http.fg = '#FFA500'
 
 ## Foreground color of the URL in the statusbar on successful load
 ## (https).
@@ -340,11 +340,11 @@ c.colors.statusbar.url.success.http.fg = '#008000'
 
 ## Foreground color of the URL in the statusbar when there's a warning.
 ## Type: QssColor
-c.colors.statusbar.url.warn.fg = 'yellow'
+c.colors.statusbar.url.warn.fg = '#ffff00'
 
 ## Background color of the tab bar.
 ## Type: QssColor
-c.colors.tabs.bar.bg = '#800080'
+c.colors.tabs.bar.bg = '#FFA500'
 
 ## Background color of unselected even tabs.
 ## Type: QtColor
@@ -416,19 +416,19 @@ c.colors.tabs.odd.fg = '#e5e5e5'
 
 ## Background color of selected even tabs.
 ## Type: QtColor
-c.colors.tabs.selected.even.bg = '#800080'
+c.colors.tabs.selected.even.bg = '#FFA500'
 
 ## Foreground color of selected even tabs.
 ## Type: QtColor
-c.colors.tabs.selected.even.fg = '#e5e5e5'
+c.colors.tabs.selected.even.fg = '#000000'
 
 ## Background color of selected odd tabs.
 ## Type: QtColor
-c.colors.tabs.selected.odd.bg = '#800080'
+c.colors.tabs.selected.odd.bg = '#FFA500'
 
 ## Foreground color of selected odd tabs.
 ## Type: QtColor
-c.colors.tabs.selected.odd.fg = '#e5e5e5'
+c.colors.tabs.selected.odd.fg = '#000000'
 
 ## Background color for webpages if unset (or empty to use the theme's
 ## color).

@@ -71,7 +71,7 @@
 
 
 * COLORS:
-	Main Color: Purple: #800080
+	Main Color: Orange: #FFA500
 	Second Color: Dark Gray: #191919
 	Text Color: White: #e5e5e5
         url Color: Light Blue: #ADD8e6
@@ -126,3 +126,70 @@ exec --no-startup-id start_conky_themeName
 ```
 
 * My configuration is in **Conky** Directory
+
+### i3 BLOCKS
+
+* i3 block is a status line to i3 enviroment
+* INSTALLATION: sudo pacman -S i3blocks
+* CONFIGURATION FILE LOCATION: **/etc/i3blocks.conf**
+
+* My Configuration:
+
+* First i create an battery script who shows the status and put on **~** Directory:
+
+```sh
+#!/bin/bash
+
+BAT=$(acpi -b | grep -E -o '[0-9][0-9]?%')
+
+# Message
+echo "Battery: $BAT"
+echo "BAT: $BAT"
+
+# Full Battery (GREEN)
+[${BAT%} -le 100] && echo "#008000"
+
+# Battery below 20% (YELLOW)
+[${BAT%} -le 20] && echo "#FFFF00"
+
+# Low Battery (RED)
+[${BAT%} -le 5] && echo "#FF0000"
+
+exit 0
+```
+* Make this script executable with `chmod +x battery.sh`
+* Now i will call this script on my i3block
+
+```sh
+#Check in 5 to 5 seconds
+[battery]
+command=~/battery.sh
+interval=5
+```
+
+* Check my IP
+
+```sh
+[ip]
+color=#FFC966
+command=echo -e "IP: $(hostname -i)"
+interval=5
+```
+* Always needed the interval option
+
+* Check Disk Available
+
+```sh
+[disk]
+color=#FFB732
+command=echo "Disk Available: $(df -H --output=avail /dev/sda1 | grep -o '[0-9]*[G]')"
+interval=1
+```
+* time
+
+```sh
+[time]
+command=date '%Y-%m-%d %H:%M:%S'
+interval=1
+
+```

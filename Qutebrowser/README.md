@@ -7,32 +7,31 @@
 
 ### Colors
 
-Active Tab Background: Purple: `#800080`
+Active Tab Background: Orange: `#FFA500`
 Inactive Tab Background: Dark Gray: `#191919`
-Text Color: White: `#e5e5e5`
-URL Color Loading: Light Blue: `#add8e6`
+Text Color: White: `#E5E5E5`
+URL Color Loading: Light Blue: `#ADD8E6`
 URL Loaded: Green: `#008000`
-URL with Error: Red: `#ff0000`
-URL with Warning: Yellow: `#ffff00`
+URL with Error: Red: `#FF0000`
+URL with Warning: Yellow: `#FFFF00`
 
 ### Changes on the Generated Config.py
 
 
 | Modification | Code |
 |---|---|
-|Scrollbar Background Color|c.color.completion.scrollbar.bg = '#800080'
-|Foreground URL from Statusbar with error|c.colors.statusbar.url.error.fg = '#ff0000'
-|Foreground URL from Status Bar|c.colors.statusbar.url.fg = '#add8e6'
-|Foreground URL from Succes when find url|c.colors.statusbar.url.success.http.fg = `#008000`
-|Foreground URL when have a warning|c.colors.statusbar.url.warn.fg = '#ffff00'  
-|Background color from the tab bar|c.colors.tabs.bar.bg = '#800080'
+|Scrollbar Background Color|c.color.completion.scrollbar.bg = '#FFA500'
+|Foreground URL from Statusbar with error|c.colors.statusbar.url.error.fg = '#FF0000'
+|Foreground URL from Status Bar|c.colors.statusbar.url.fg = '#ADD8E6'
+|Foreground URL when have a warning|c.colors.statusbar.url.warn.fg = '#FFFF00'  
+|Background color from the tab bar|c.colors.tabs.bar.bg = '#FFA500'
 |Backgound from unselected even tabs|c.colors.tabs.even.bg = '#191919'
-|Foreground color of unselected even tabs = '#e5e5e5'
-|Color from error in tab|c.colors.tabs.indicator.error = '#ff0000'
+|Foreground color of unselected even tabs = '#E5E5E5'
+|Color from error in tab|c.colors.tabs.indicator.error = '#FF0000'
 |Background color of unselected odd tabs|c.colors.tabs.odd.bg = '#191919'
-|Foreground color of unselected odd tabs|c.colors.tabs.odd.fg = '#e5e5e5'
-|Background color of selected even tabs|c.colors.tabs.selected.even.bg = '#800080'
-|Foreground color of selected even tabs|c.colors.tabs.selected.even.fg = '#e5e5e5'
+|Foreground color of unselected odd tabs|c.colors.tabs.odd.fg = '#E5E5E5'
+|Background color of selected even tabs|c.colors.tabs.selected.even.bg = '#FFA500'
+|Foreground color of selected even tabs|c.colors.tabs.selected.even.fg = '#E5E5E5'
 |Background color of selected odd tabs|c.colors.tabs.selected.odd.bg = '#800080'
-|Foreground color of selected odd tabs|c.colors.tabs.selected.odd.fg = '#e5e5e5'
+|Foreground color of selected odd tabs|c.colors.tabs.selected.odd.fg = '#E5E5E5'
 |Make dark mode pages who has this possibility|c.colors.webpage.prefer_color_scheme_dark = True
