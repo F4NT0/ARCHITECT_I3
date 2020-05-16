@@ -18,6 +18,8 @@
 | Picom  | To make the Shells transparent | picom | **~/.config/picom.conf**
 | Conky | Showing information on Desktop | sudo pacman -S conky-all |  
 | QuteBrowser | sudo pacman -S qutebrowser | <kbd>Mod4</kbd> + <kbd>F2</kbd>|**~/.config/qutebrowser/config.py**
+| Gtop | sudo pacman -S npm && npm install gtop -g | `gtop`|None
+
 
 ### FONT
 
@@ -167,4 +169,28 @@ interval=1
 command=date '%Y-%m-%d %H:%M:%S'
 interval=1
 
+```
+
+### VIM CONFIGURATION
+
+* vimrc CONFIG FILE LOCATION: **/etc/vimrc**
+* Here some types of modifications
+
+```sh
+# Show number informations
+set number
+# Code Highlight
+syntax on
+# Tab space
+set tabstop=2
+# Autoindentation
+set autoindent
+```
+* Website to create colorscheme for VIM: http://bytefluent.com/vivify/
+* My Colorscheme is in **VIM** Directory on this Repo
+* WHERE TO PUT THE COLORSCHEME: **/usr/share/vim/vim82/colors**
+* AFTER OPEN YOUR VIMRC FILE AND PUT:
+
+```sh
+colorscheme <nameofthescheme>
 ```
