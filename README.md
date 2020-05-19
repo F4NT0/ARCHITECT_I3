@@ -101,8 +101,8 @@
 	* `picom --config ~/.config/picom.conf`
 
 * CONFIGURATION ON I3: 
-	* Insert on the config file from i3 = `exec --no-startup-id picom`
-	* Restart the System: Mod4 + SHIFT + E
+	* Insert on the config file from i3 = `exec --no-startup-id picom --experimental-backends`
+	* Restart the System: Mod4 + SHIFT + E`
 
 ### CONKY CONFIGURATION
 
@@ -215,3 +215,20 @@ ascii_distro="Manjaro"
 ascii_colors(3)
 ```
 * My configuration in on **Neofetch** Directory
+
+### SOUND - PULSEAUDIO WITH PAVUCONTROL
+* First we need to download pulseaudio = `sudo pacman -S pulseaudio`
+* Second we download pavucontrol = `sudo pacman -S pavucontrol`
+* Restart the Computer = `shutdown -r now`
+* To use the system, write on the Shell the Following command: `pavucontrol`
+* I create a command to the i3 configuration:
+
+```sh
+bindsym $mod+Ctrl+m exec pavucontrol
+```
+
+### PCMANFM
+
+* pcmanfm is a GUI visualization for i3, to see all files and archives
+* INSTALLATION: it already comes with manjaro i3, but you can install with: `sudo pacman -S pcmanfm`
+* CONFIGURATION FILE: 
