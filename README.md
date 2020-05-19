@@ -21,6 +21,16 @@
 | Gtop | sudo pacman -S npm && npm install gtop -g | `gtop`|None
 
 
+### COLORS
+
+* Main Color: Green - #329932
+* Second Color: White - #E5E5E5
+* Background Color: Dark Gray: #191919
+
+### CHANGE SHELL COLORS ON MANJARO I3
+* The color file configuration is **~/.dir_colors**
+
+
 ### FONT
 
 * The Font is Terminus, on [This Folder](Terminus_Font) is all the Directory from this Font.
@@ -73,7 +83,7 @@
 
 
 * COLORS:
-	Main Color: Orange: #FFA500
+	Main Color: Green: #329932
 	Second Color: Dark Gray: #191919
 	Text Color: White: #e5e5e5
         url Color: Light Blue: #ADD8e6
