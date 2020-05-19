@@ -24,7 +24,7 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft:URWGothic-Book 11
+font 'xft:xos4 Terminus:style=Regular:size=11'
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -269,7 +269,6 @@ bindsym $mod+9 exec --no-startup-id blurlock
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1;
-#exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
@@ -277,7 +276,6 @@ exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_fanto
-# exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -325,13 +323,13 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-#   font xft:URWGothic-Book 11
+  font 'xft:xos4 Terminus:size=20'
 	strip_workspace_numbers yes
 
     colors {
         background #191919
-        statusline #FFA500
-        separator  #008000
+        statusline #329932
+        separator  #e5e5e5
 
 #                      border  backgr. text
         focused_workspace  #F9FAF9 #16a085 #292F34

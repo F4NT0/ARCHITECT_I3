@@ -29,6 +29,7 @@
 
 ### CHANGE SHELL COLORS ON MANJARO I3
 * The color file configuration is **~/.dir_colors**
+* The colors from the urxvt shell is **~/.Xresources**
 
 
 ### FONT
@@ -42,6 +43,7 @@
 * How to change the Font:
    * See possible fonts: `fc-list | grep "terminus"`
    * Change font from the .Xresources file, like showing below
+* My Favorite font on i3 is: `xos4 Terminus:style=Regular:size=11`
 
 ### PS1 COLORS
 
@@ -62,7 +64,7 @@
 * Configuration File: **~/.Xresources**
 * Restarting Configuration file: `xrdb ~/.Xresources`
 * Change font for my favorite on the file:
-    * For Regular: `Urxvt.font:    xft:xos4 Terminus:style=Regular:size=14`
+    * For Regular: `Urxvt.font:    xft:xos4 Terminus:style=Regular:size=11`
 * Change Background: Background Color is #191919
     * On the .Xresources: `Urxvt.background: [100]#191919`
 * Make Terminal Transparent: (ONLY WHEN COMPTON DOESN'T WORK)
@@ -111,7 +113,7 @@
 	* `picom --config ~/.config/picom.conf`
 
 * CONFIGURATION ON I3: 
-	* Insert on the config file from i3 = `exec --no-startup-id picom --experimental-backends`
+	* Insert on the config file from i3 = `exec --no-startup-id picom`	
 	* Restart the System: Mod4 + SHIFT + E`
 
 ### CONKY CONFIGURATION
@@ -144,6 +146,8 @@ exec --no-startup-id start_conky_themeName
 * i3 block is a status line to i3 enviroment
 * INSTALLATION: sudo pacman -S i3blocks
 * CONFIGURATION FILE LOCATION: **/etc/i3blocks.conf**
+* the font you put on **~/.i3/config** as:
+	* `font 'xft:xos4 Terminus:size=11'`
 
 * My Configuration on i3blocks:
 
@@ -244,3 +248,10 @@ bindsym $mod+Ctrl+m exec pavucontrol
 * pcmanfm is a GUI visualization for i3, to see all files and archives
 * INSTALLATION: it already comes with manjaro i3, but you can install with: `sudo pacman -S pcmanfm`
 * CONFIGURATION FILE: 
+
+### POLYBAR
+
+* Polybar is to apresent some information on desktop
+* INSTALLATION: `sudo pacman -S polybar`
+* CONFIGURATION FILE LOCATION: **/usr/share/doc/polybar/config**
+* move the file to **~/.config/polybar/config**
