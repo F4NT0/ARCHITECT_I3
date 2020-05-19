@@ -234,8 +234,10 @@ ascii_colors(3)
 * I create a command to the i3 configuration:
 
 ```sh
+exec --no-startup pulseaudio
 bindsym $mod+Ctrl+m exec pavucontrol
 ```
+* if the sound doesn't work, stop with `pulseaudio --kill` and then `pulseaudio --start`
 
 ### PCMANFM
 
