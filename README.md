@@ -30,7 +30,7 @@
 ### CHANGE SHELL COLORS ON MANJARO I3
 * The color file configuration is **~/.dir_colors**
 * The colors from the urxvt shell is **~/.Xresources**
-
+* On the **Colors** Directory, there is my dir_colors and my .Xresources
 
 ### FONT
 
@@ -56,7 +56,7 @@
     * In the end of the file put this two lines:
     * `source ~/.bash_git`
     * `export GIT_PS1_SHOWDIRTYSTATE=1`
-
+* All My configuration is in **Bashrc** Directory
 ### TERMINAL
 
 * We are going to use URXVT terminal
@@ -67,11 +67,7 @@
     * For Regular: `Urxvt.font:    xft:xos4 Terminus:style=Regular:size=11`
 * Change Background: Background Color is #191919
     * On the .Xresources: `Urxvt.background: [100]#191919`
-* Make Terminal Transparent: (ONLY WHEN COMPTON DOESN'T WORK)
-    * On the .Xresources: 
-	* `Urxvt.transparent: true`
-        
-	* `Urxvt.shading: 20` 
+* Change Cursor Type: `Urxvt*cursorUnderline: true` 
 
 ### QUTEBROWSER
 
