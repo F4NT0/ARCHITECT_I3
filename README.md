@@ -32,6 +32,10 @@
 * The colors from the urxvt shell is **~/.Xresources**
 * On the **Colors** Directory, there is my dir_colors and my .Xresources
 
+### GIT
+* O Change the Colors from Git in **~/.gitconfig**
+* My GitConfig is in the **Git** Directory
+
 ### FONT
 
 * The Font is Terminus, on [This Folder](Terminus_Font) is all the Directory from this Font.
