@@ -233,10 +233,16 @@ ascii_colors(2)
 * Second we download pavucontrol = `sudo pacman -S pavucontrol`
 * Restart the Computer = `shutdown -r now`
 * To use the system, write on the Shell the Following command: `pavucontrol`
-* I create a command to the i3 configuration:
+* I create a file on **~/.config/pulse/launch.sh** with the following:
 
 ```sh
-exec --no-startup pulseaudio
+pulseaudio --kill
+pulseaudio --start 
+```
+* I create a command to the i3 configuration to call this file:
+
+```sh
+exec --no-startup ~/.config/pulse/launch.sh
 bindsym $mod+Ctrl+m exec pavucontrol
 ```
 * if the sound doesn't work, stop with `pulseaudio --kill` and then `pulseaudio --start`
