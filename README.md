@@ -209,22 +209,24 @@ colorscheme <nameofthescheme>
 
 * CONFIGURATION FILE LOCATION: **~/.config/neofetch/config.conf**
 * inside this file, there is the part of the font colors
+* I insert the w3m settings downloaded: `sudo pacman -S w3m`
+	* This serves to insert image on neofetch
 * i putted like this:
 
 ```sh
 #order: tittle,@,underline,subtittle,colon,info
-colors=(3 3 3 3 3 7)
+colors=(2 2 2 2 2 7) #green
 
 #Image source
-image_source="ascii"
+image_source="w3m"
 
 #Ascii Distro
-ascii_distro="Manjaro"
+ascii_distro="~/Imagens/Wallpapers/manjaro_neofetch.png"
 
 "Ascii color
-ascii_colors(3)
+ascii_colors(2)
 ```
-* My configuration in on **Neofetch** Directory
+* My configuration is on **Neofetch** Directory
 
 ### SOUND - PULSEAUDIO WITH PAVUCONTROL
 * First we need to download pulseaudio = `sudo pacman -S pulseaudio`
@@ -249,5 +251,14 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 * Polybar is to apresent some information on desktop
 * INSTALLATION: `sudo pacman -S polybar`
-* CONFIGURATION FILE LOCATION: **/usr/share/doc/polybar/config**
-* move the file to **~/.config/polybar/config**
+* Send the config to **.config/polybar**: `install -Dm644 /usr/share/doc/polybar/config ~/.config/polybar/`
+* to test the example you go to the _.config/polybar/_ and use this command: `polybar example`
+* I create my example from the Github Repo of Polybar
+* My config file is in the **Polybar** Directory
+* Create the _launch.sh_ to call on i3 and it is in the **Polybar** Directory too
+* Make Runnable: `chmod +x launch.sh`
+* Call the file on i3 config:
+```sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+```
+* Comment all bar{} part on the i3 config file

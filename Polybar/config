@@ -1,0 +1,131 @@
+;--------------------------
+; MY POLYBAR CONFIGURATION
+;--------------------------
+
+[colors]
+background = #aa191919
+foreground = #E5E5E5
+green = #329932
+alert = #FF0000
+
+[bar/fanto]
+
+;size
+width = 100%
+height = 20
+radius = 3.0
+fixed-center = true
+bottom = true
+
+;colors
+background = #aa191919
+foreground = ${colors.foreground}
+
+;lines
+line-size = 3
+line-color = #E5E5E5
+
+;borders
+border-size = 4
+border-color = ${colors.background}
+
+;padding
+padding-left = 0
+padding-right = 2
+
+;modules
+module-margin-left = 1
+module-margin-right = 2
+modules-left = i3
+modules-center = date
+modules-right = pulseaudio battery
+
+;fonts
+font-0 = xfts:xos4 Terminus:style=Regular:size=9
+
+;cursor
+cursor-click = pointer
+
+[module/i3]
+; basic info
+type = internal/i3
+format = <label-state><label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; style
+label-mode-foreground = ${colors.foreground}
+label-mode-background = ${colors.background}
+label-mode-padding = 4
+; Focused Workspace
+label-focused = %index%
+label-focused-background = ${colors.background}
+label-focused-foreground = ${colors.green}
+label-focused-underline = ${colors.green}
+label-focused-padding = 4
+; Unfocused Workspace
+label-unfocused = %index%
+label-unfocused-padding = 4
+; Visible but now using
+label-visible = %index&
+label-visible-background = ${colors.background}
+label-visible-padding = 4
+; Urgent Workspace
+label-urgent = %index%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 4
+[module/date]
+type= internal/date
+interval = 1
+; date
+date = %Y-%m-%d
+date-alt = " %Y-%m-%d"
+; time
+time = %H:%M:%S
+time-alt = %H:%M:%S
+; format
+format-prefix-foreground = ${colors.foreground}
+;label
+label = %date% | %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+; format
+format-volume = <label-volume> <bar-volume>
+;labels
+label-volume = VOL > %percentage%
+label-volume-foreground = ${colors.foreground}
+label-muted = MUTE
+label-muted-foreground = ${colors.alert}
+;bar
+bar-volume-width = 10
+bar-volume-foreground-0 = #E5E5E5
+bar-volume-foreground-1 = #E5E5E5
+bar-volume-foreground-2 = #E5E5E5
+bar-volume-foreground-3 = #E5E5E5
+bar-volume-foreground-4 = #329932
+bar-volume-foreground-5 = #329932
+bar-volume-foreground-6 = #FF0000
+bar-volume-gradient = false
+bar-volume-indicator = #
+bar-volume-indicator-font = 4
+bar-volume-fill = -
+bar-volume-fill-font = 4
+bar-volume-empty = -
+bar-volume-empty-font = 4
+bar-volume-empty-foreground = #E5E5E5
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ADP1
+full-at = 98
+time-format = %H:%M
+
+;labels
+label-charging = BAT > %percentage%%
+label-charging-foreground = #FFFF00
+label-discharging = BAT > %percentage%%
+label-discharging-foreground = #FF0000
+label-full = BAT > FULL
+label-full-foreground = #329932
