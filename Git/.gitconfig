@@ -1,12 +1,12 @@
 [user]
-	email = gabriel.stundner@acad.pucrs.br
-	name = F4NT0
+email = gabriel.stundner@acad.pucrs.br
+name = F4NT0
 [color]
-	ui = true
+ui = true
 [color "status"]
-				changed = yellow bold
-				untracked = red bold
-				added = green bold
+changed = yellow bold
+untracked = red bold
+added = green bold
 [color "diff"]
-				old = red bold
-				new = green bold
+old = red bold
+new = green bold

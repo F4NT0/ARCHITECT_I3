@@ -72,7 +72,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\]C4L4NG0_S3RV3R \[\033[0;31m\] \W\[\033[0;36m\] $(__git_ps1 " (%s)") > \[\033[00m\] '
+		PS1='\[\033[01;32m\]C4L4NG0_S3RV3R \[\033[0;33m\] \W\[\033[0;00m\] $(__git_ps1 " (%s)") > '
 	fi
 
 	alias ls='ls --color=auto'
@@ -142,3 +142,4 @@ ex ()
 # Configurando GIT
 source ~/.bash_git
 export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWCOLORHINTS=1

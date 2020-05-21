@@ -2,9 +2,9 @@
 
 ### MY CHEAT-SHEETS
 
-* [TMUX]()
-* [I3 COMMANDS]()
-* [QUTEBROWSER]()
+* [TMUX](Cheat-Sheets/TMUX_Commands.txt)
+* [I3 COMMANDS](Cheat-Sheets/i3_commands.txt)
+* [QUTEBROWSER](Cheat-Sheets/qute_commands.txt)
 
 
 
@@ -25,36 +25,10 @@
 | Program | Use for | My Configuration
 |---|---|---|
 | Color Configuration| Define the System Colors| [Click Here](Colors/README.md)
+| Git Configurations|Define Shell Git configurations|[Click Here](Git/README.md)
+| My Font - xos4 Terminus|Define my favorite Font|[Click Here](Terminus_Font/README.md)
+| My PS1 Configuration|Define the information showed on terminal|[Click Here](Bashrc/README.md)
 
-### GIT
-* O Change the Colors from Git in **~/.gitconfig**
-* My GitConfig is in the **Git** Directory
-
-### FONT
-
-* The Font is Terminus, on [This Folder](Terminus_Font) is all the Directory from this Font.
-* How to install the Font:
-   * Unzip the Folder on your Downloads Folder: `tar -xzvf terminus-font-4.48.tar.gz`
-   * `./configure /etc/fonts`
-   * `make -j8`
-   * `sudo make install fontdir`
-* How to change the Font:
-   * See possible fonts: `fc-list | grep "terminus"`
-   * Change font from the .Xresources file, like showing below
-* My Favorite font on i3 is: `xos4 Terminus:style=Regular:size=11`
-
-### PS1 COLORS
-
-* PS1 is the basic information who appears on your Shell
-* Configuration file: **~/.bashrc**
-* My Basic Configuration: `PS1='\[033[01;35m\] C4L4NG0_S3RV3R \[033[01;36m\] \W \[033[01;33m\] $(__git_ps1 " (%s)") > \[\033[00m'`
-* Configuring Git on Bashrc:
-    * Create de bash_git with this command: 
-	* `curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.bash_git`
-    * In the end of the file put this two lines:
-    * `source ~/.bash_git`
-    * `export GIT_PS1_SHOWDIRTYSTATE=1`
-* All My configuration is in **Bashrc** Directory
 ### TERMINAL
 
 * We are going to use URXVT terminal
@@ -256,7 +230,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 * Polybar is to apresent some information on desktop
 * INSTALLATION: `sudo pacman -S polybar`
-* Send the config to **.config/polybar**: `install -Dm644 /usr/share/doc/polybar/config ~/.config/polybar/`
+* Send the config to **~/.config/polybar**: `install -Dm644 /usr/share/doc/polybar/config ~/.config/polybar/`
 * to test the example you go to the _.config/polybar/_ and use this command: `polybar example`
 * I create my example from the Github Repo of Polybar
 * My config file is in the **Polybar** Directory
