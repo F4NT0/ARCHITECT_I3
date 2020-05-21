@@ -116,7 +116,7 @@
 	* Insert on the config file from i3 = `exec --no-startup-id picom`	
 	* Restart the System: Mod4 + SHIFT + E`
 
-### CONKY CONFIGURATION
+### CONKY BASE CONFIGURATION
 
 * The themes from Conky on Manjary is in **/usr/share/conky**
 * The _conky1.10__shortcuts_themeName_ is themes from the Shortcut
@@ -140,6 +140,7 @@ exec --no-startup-id start_conky_themeName
 ```
 
 * My configuration is in **Conky** Directory
+* Now, my system is now only on **conky_fanto** configuration on the **start_conky_fanto**
 
 ### i3 BLOCKS
 

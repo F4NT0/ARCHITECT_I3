@@ -11,7 +11,7 @@ GLOSSARY: Mod4 is the Windows logo on the Keyboard
 
 	BASIC COMMANDS ON THE I3
  _________________________________________________
-| 	COMMAND          |      USE FOR           |
+| 	COMMAND              |      USE FOR           |
 |------------------------|------------------------|
 | Mod4 + ENTER           | Open a new Shell CLI   |
 |------------------------|------------------------|
@@ -33,7 +33,7 @@ GLOSSARY: Mod4 is the Windows logo on the Keyboard
 	  
             COMMANDS OF MOVING WINDOWS
  __________________________________________________
-| 	COMMAND          |          USE FOR        |
+| 	COMMAND              |          USE FOR        |
 |------------------------|-------------------------|
 | Mod4 + SHIFT + J       | Move Window to Left     |
 |------------------------|-------------------------|
@@ -94,7 +94,7 @@ GLOSSARY: Mod4 is the Windows logo on the Keyboard
 
 	COMMAND TO OPEN BROWSER
  _____________________________________________________
-| 	COMMAND          |        USE FOR             |
+| 	COMMAND              |        USE FOR             |
 |------------------------|----------------------------|
 | Mod4 + F2              | Open configurable Browser  |
 |------------------------|----------------------------|

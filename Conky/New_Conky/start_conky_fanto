@@ -1,0 +1,5 @@
+#!/bin/bash
+
+conky -c /usr/share/conky/conky_fanto &&
+
+exit 0

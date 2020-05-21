@@ -1,0 +1,84 @@
+conky.config = {
+	alignment = 'top_right',
+	background = true,
+	color2 = 'E5E5E5',
+	color3 = 'FFA500',
+	color4 = '993299',
+	cpu_avg_samples = 2,
+	default_color = '329932',
+	double_buffer = true,
+	font = 'xos4 Terminus:style=Regular:size=11',
+	draw_shades = false,
+	gap_x = 25,
+	gap_y = 13,
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 1.0,
+	use_xft = true,
+}
+conky.text = [[
+
+#------ 
+# CPU
+#------
+
+${color}CPU${alignr 5}$cpu%
+${color}${cpugraph cpu1 50,275 FF0000 FFA500 }
+
+#-----
+# RAM
+#-----
+
+${color}RAM ${alignr 5}$mem / $memmax
+${color2}${fs_bar 20}
+
+${color}Top RAM use${font}$font
+${color3}${top_mem name 1}$alignr$color${top_mem mem_res 1}
+${color3}${top_mem name 2}$alignr$color${top_mem mem_res 2}
+${color3}${top_mem name 3}$alignr$color${top_mem mem_res 3}
+
+#------
+# SWAP
+#------
+
+${color}Swap${alignr 5}${swap}/ ${swapfree}
+${color2}${fs_bar 20}
+
+#--------
+# NETWORK
+#--------
+
+${color}Network$font
+${hr 1}
+Download${alignr 10}${downspeedf wlp3s0} kbps
+Upload${alignr 10}${upspeedf wlp3s0} kbps
+Local IP${alignr 10}${addr wlp3s0}
+
+#------------
+# USEFUL INFO
+#------------
+
+${color}Useful Commands$font
+${hr 1}
+${color}N3W SH3LL    -> ${color3}Mod4 + Enter
+${color}CLOS3 SCR33N -> ${color3}Mod4 + Shift + q
+${color}OP3N BR0WS3R -> ${color3}Mod4 + F2
+${color}SH3LL(VT) -> ${color3}Mod4 + v + Mod4 + Enter
+${color}SH3LL(HR) -> ${color3}Mod4 + h + Mod4 + Enter
+${color}R3SIZ3 -> ${color3}Mod4 + r + Arrows
+${color}SWITCH WORK  -> ${color3}Mod4 + Number
+${color}SEND TO WORK -> ${color3}Mod4 + Ctrl + Number
+${color}FULLSCR33N   -> ${color3}Mod4 + f
+${color}FLOATING -> ${color3}Mod4 + Shift + Space
+${color}DR4G -> ${color3}Mod4 + Shift + Arrows
+${color}APP LAUNCHER   -> ${color3}Mod4 + d
+${color}R3START C0NFIG -> ${color3}Mod4 + Shift + c
+${color}R3START I3 -> ${color3}Mod4 + Shift + r
+${color}EXIT I3    -> ${color3}Mod4 + Shift + e
+
+
+
+]]
