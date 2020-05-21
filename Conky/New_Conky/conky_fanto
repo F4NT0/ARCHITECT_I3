@@ -33,19 +33,27 @@ ${color}${cpugraph cpu1 50,275 FF0000 FFA500 }
 #-----
 
 ${color}RAM ${alignr 5}$mem / $memmax
-${color2}${fs_bar 20}
+${color2}${membar 10}
 
 ${color}Top RAM use${font}$font
 ${color3}${top_mem name 1}$alignr$color${top_mem mem_res 1}
 ${color3}${top_mem name 2}$alignr$color${top_mem mem_res 2}
 ${color3}${top_mem name 3}$alignr$color${top_mem mem_res 3}
 
+#-------
+# MEMORY
+#-------
+
+${color}Memory ${alignr 5} $fs_used / $fs_size
+${color2}${fs_bar 10}
+
+
 #------
 # SWAP
 #------
 
 ${color}Swap${alignr 5}${swap}/ ${swapfree}
-${color2}${fs_bar 20}
+${color2}${swapbar 10}
 
 #--------
 # NETWORK
@@ -77,7 +85,6 @@ ${color}DR4G -> ${color3}Mod4 + Shift + Arrows
 ${color}APP LAUNCHER   -> ${color3}Mod4 + d
 ${color}R3START C0NFIG -> ${color3}Mod4 + Shift + c
 ${color}R3START I3 -> ${color3}Mod4 + Shift + r
-${color}EXIT I3    -> ${color3}Mod4 + Shift + e
 
 
 
