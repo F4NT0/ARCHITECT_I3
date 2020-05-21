@@ -20,17 +20,11 @@
 | QuteBrowser | sudo pacman -S qutebrowser | <kbd>Mod4</kbd> + <kbd>F2</kbd>|**~/.config/qutebrowser/config.py**
 | Gtop | sudo pacman -S npm && npm install gtop -g | `gtop`|None
 
+### MY CONFIGURATIONS
 
-### COLORS
-
-* Main Color: Green - #329932
-* Second Color: White - #E5E5E5
-* Background Color: Dark Gray: #191919
-
-### CHANGE SHELL COLORS ON MANJARO I3
-* The color file configuration is **~/.dir_colors**
-* The colors from the urxvt shell is **~/.Xresources**
-* On the **Colors** Directory, there is my dir_colors and my .Xresources
+| Program | Use for | My Configuration
+|---|---|---|
+| Color Configuration| Define the System Colors| [Click Here](Colors/README.md)
 
 ### GIT
 * O Change the Colors from Git in **~/.gitconfig**

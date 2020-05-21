@@ -1,0 +1,16 @@
+
+-----------------------------------
+  ____ ___  _   _ _____ ___ ____ 
+ / ___/ _ \| \ | |  ___|_ _/ ___|
+| |  | | | |  \| | |_   | | |  _ 
+| |__| |_| | |\  |  _|  | | |_| |
+ \____\___/|_| \_|_|   |___\____|
+-----------------------------------
+
+BAR: POLYBAR
+DESKTOP INFO: CONKY
+BROWSER: QUTEBROWSER
+TERMINAL INFO: NEOFETCH
+TERMINAL: URXVT
+FONT: xos4 Terminus
+TRANSPARENCY: PICOM
