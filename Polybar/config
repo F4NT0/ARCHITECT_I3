@@ -1,5 +1,9 @@
-;--------------------------
+;==========================
 ; MY POLYBAR CONFIGURATION
+;==========================
+
+;-------------------------
+; BASE COLOR CONFIGURATION
 ;--------------------------
 
 [colors]
@@ -8,85 +12,119 @@ foreground = #E5E5E5
 green = #329932
 alert = #FF0000
 
+;---------------------
+; MY BAR FROM POLYBAR
+;---------------------
+
 [bar/fanto]
 
-;size
+; -> size
 width = 100%
 height = 20
 radius = 3.0
 fixed-center = true
 bottom = true
 
-;colors
+;-> bar colors
 background = #aa191919
 foreground = ${colors.foreground}
 
-;lines
+; -> ines
 line-size = 3
 line-color = #E5E5E5
 
-;borders
+; -> borders
 border-size = 4
 border-color = ${colors.background}
 
-;padding
+; -> padding
 padding-left = 0
 padding-right = 2
 
-;modules
+; -> modules
 module-margin-left = 1
 module-margin-right = 2
 modules-left = i3
 modules-center = date
 modules-right = pulseaudio battery
 
-;fonts
-font-0 = xfts:xos4 Terminus:style=Regular:size=9
+; -> fonts
+font-0 = xos4 Terminus:style=Regular:size=9
 
-;cursor
+; -> cursor
 cursor-click = pointer
 
+;------------------
+; I3 MODULE WINDOWS
+;-------------------
+
 [module/i3]
-; basic info
+; -> basic info
 type = internal/i3
 format = <label-state><label-mode>
 index-sort = true
 wrapping-scroll = false
 
-; style
+; -> style
 label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.background}
 label-mode-padding = 4
-; Focused Workspace
-label-focused = %index%
+
+; -> names for the labels
+ws-icon-0 = 1;I
+ws-icon-1 = 2;II
+ws-icon-2 = 3;III
+ws-icon-3 = 4;IV
+ws-icon-4 = 5;V
+ws-icon-5 = 6;VI
+ws-icon-6 = 7;VII
+ws-icon-default = X
+
+; ->  Focused Workspace
+label-focused = %icon%
 label-focused-background = ${colors.background}
 label-focused-foreground = ${colors.green}
 label-focused-underline = ${colors.green}
 label-focused-padding = 4
-; Unfocused Workspace
-label-unfocused = %index%
+
+; -> Unfocused Workspace
+label-unfocused = %icon%
 label-unfocused-padding = 4
-; Visible but now using
-label-visible = %index&
+
+; ->  Visible but now using
+label-visible = %icon%
 label-visible-background = ${colors.background}
 label-visible-padding = 4
-; Urgent Workspace
-label-urgent = %index%
+
+; ->  Urgent Workspace
+label-urgent = %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 4
+
+;-------------
+; DATE MODULE
+;-------------
+
 [module/date]
 type= internal/date
 interval = 1
-; date
+
+; -> date
 date = %Y-%m-%d
 date-alt = " %Y-%m-%d"
-; time
+
+; -> time
 time = %H:%M:%S
 time-alt = %H:%M:%S
-; format
+
+; -> format
 format-prefix-foreground = ${colors.foreground}
 ;label
 label = %date% | %time%
+
+;--------------
+; SOUND MODULE 
+;--------------
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -114,6 +152,10 @@ bar-volume-fill-font = 4
 bar-volume-empty = -
 bar-volume-empty-font = 4
 bar-volume-empty-foreground = #E5E5E5
+
+;---------------
+; BATTERY MODULE
+;---------------
 
 [module/battery]
 type = internal/battery
