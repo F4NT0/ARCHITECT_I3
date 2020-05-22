@@ -241,3 +241,9 @@ bindsym $mod+Ctrl+m exec pavucontrol
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 ```
 * Comment all bar{} part on the i3 config file
+
+### CMUS
+
+* cmus is a lightweight program to listen music from terminal.
+* DOWNLOAD: `sudo pacman -S cmus`
+* CONFIG FILE: **~/.config/cmus** 
