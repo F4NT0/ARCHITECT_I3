@@ -1,5 +1,7 @@
 # CLI-VISUALIZER SYSTEM
 
+<img src="../images/cli-visualizer.png">
+
 * Cli-visualizer is a program to show the sound on the terminal
 * DOWNLOAD: 
 	* Download the following packages: `sudo pacman -S ncurses fftw cmake`
