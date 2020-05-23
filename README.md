@@ -31,27 +31,8 @@
 | Cmus|	Program to run music on terminal|[Click Here](Cmus/README.md)|:heavy_check_mark:
 | Conky| Program to show system information on Desktop|[Click Here](Conky/README.md)|:heavy_check_mark:
 | Urxvt Terminal| Terminal 100% customizable|[Click Here](Urxvt/README.md)|:heavy_check_mark:
-
-### QUTEBROWSER
-
-* Lightest Browser to i3
-* INSTALLATION: sudo pacman -S qutebrowser
-* CREATING CONFIGURATION FILE: 
-	* The file to config is called `config.py` and needed to be created
-	* The location to create is: **~/.config/qutebrowser/config.py**
-	* When you complete the configuration, on the qutebrowser insert the following command: `:config-source`
-	* You can create a default config.py using the command on qutebrowser: `:config-write-py --defaults`
-
-
-* COLORS:
-	Main Color: Green: #329932
-	Second Color: Dark Gray: #191919
-	Text Color: White: #e5e5e5
-        url Color: Light Blue: #ADD8e6
-	url sucess color: Green: #008000
-
-* CONFIGURATION FILE EXAMPLE: it's in the qutebrowser Directory	 
-
+| Cli-visualizer| Sound visualization on Terminal |[Click Here](Cli-visualizer/README.md)|:heavy_check_mark:
+| Qutebrowser | Command-Line Browser |[Click Here](Qutebrowser/README.md)
 
 ### PICOM
 
@@ -226,14 +207,14 @@ Plug 'itchyny/lightline.vim'
 * Open your vim
 
 
-### CLI_VISUALIZER - TO SEE SOUND ON TERMINAL
 
-* clone the cli_visualizer:
-	* `git clone https://github.com/dpayne/cli-visualizer.git` 
-* install the packages needed:
-  * `sudo pacman -S ncurses fftw cmake`
-* enter the Directory **cli_visualizer** and run **./install**
-* After downloading everything, just go to shell and call this command:
-	* `vis`
-* the configuration file is **~/.config/vis/config**
-* My configuration is in **Cli_visualizer** Directory
+
+
+
+
+
+
+
+
+
+
