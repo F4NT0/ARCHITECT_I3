@@ -1,5 +1,7 @@
 # QUTEBROWSER - THE COMMAND-LINE BROWSER
 
+<img src="../images/qutebrowser.png">
+
 * The best Browser to use with command-line
 * DOWNLOAD: `sudo pacman -S qutebrowser`
 * CREATING DEFAULT CONFIGURATION FILE:
@@ -9,7 +11,7 @@
 	* After doing the modifications, call this command on the qutebrowser: `:config-source`
 
 * My Configuration is in the **config.py** file
-* The Cheat-sheet of command is [HERE](Cheat-Sheets/qute_commands.txt)
+* The Cheat-sheet of command is [HERE](../Cheat-Sheets/qute_commands.txt)
 * I create a Keyboard shortcut to open Qutebrowser on i3wm
 
 ```sh

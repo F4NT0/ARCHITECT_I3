@@ -32,7 +32,7 @@
 | Conky| Program to show system information on Desktop|[Click Here](Conky/README.md)|:heavy_check_mark:
 | Urxvt Terminal| Terminal 100% customizable|[Click Here](Urxvt/README.md)|:heavy_check_mark:
 | Cli-visualizer| Sound visualization on Terminal |[Click Here](Cli-visualizer/README.md)|:heavy_check_mark:
-| Qutebrowser | Command-Line Browser |[Click Here](Qutebrowser/README.md)
+| Qutebrowser | Command-Line Browser |[Click Here](Qutebrowser/README.md)|:heavy_check_mark:
 
 ### PICOM
 
