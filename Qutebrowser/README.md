@@ -15,23 +15,9 @@ URL Loaded: Green: `#008000`
 URL with Error: Red: `#FF0000`
 URL with Warning: Yellow: `#FFFF00`
 
-### Changes on the Generated Config.py
+### Dark Mode on Qutebrowser
 
+* in the **~/.configs/qutebrowser/** you can insert an `.css` file with the colors you want
+* then in the qutebrowser insert the following command: `:set content.user_stylesheet stylename.css`
+* the **stylename** on my system is **fanto_darktheme.css**
 
-| Modification | Code |
-|---|---|
-|Scrollbar Background Color|c.color.completion.scrollbar.bg = '#FFA500'
-|Foreground URL from Statusbar with error|c.colors.statusbar.url.error.fg = '#FF0000'
-|Foreground URL from Status Bar|c.colors.statusbar.url.fg = '#ADD8E6'
-|Foreground URL when have a warning|c.colors.statusbar.url.warn.fg = '#FFFF00'  
-|Background color from the tab bar|c.colors.tabs.bar.bg = '#FFA500'
-|Backgound from unselected even tabs|c.colors.tabs.even.bg = '#191919'
-|Foreground color of unselected even tabs = '#E5E5E5'
-|Color from error in tab|c.colors.tabs.indicator.error = '#FF0000'
-|Background color of unselected odd tabs|c.colors.tabs.odd.bg = '#191919'
-|Foreground color of unselected odd tabs|c.colors.tabs.odd.fg = '#E5E5E5'
-|Background color of selected even tabs|c.colors.tabs.selected.even.bg = '#FFA500'
-|Foreground color of selected even tabs|c.colors.tabs.selected.even.fg = '#E5E5E5'
-|Background color of selected odd tabs|c.colors.tabs.selected.odd.bg = '#800080'
-|Foreground color of selected odd tabs|c.colors.tabs.selected.odd.fg = '#E5E5E5'
-|Make dark mode pages who has this possibility|c.colors.webpage.prefer_color_scheme_dark = True

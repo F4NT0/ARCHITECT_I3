@@ -22,24 +22,15 @@
 
 ### MY CONFIGURATIONS
 
-| Program | Use for | My Configuration
-|---|---|---|
-| Color Configuration| Define the System Colors| [Click Here](Colors/README.md)
-| Git Configurations|Define Shell Git configurations|[Click Here](Git/README.md)
-| My Font - xos4 Terminus|Define my favorite Font|[Click Here](Terminus_Font/README.md)
-| My PS1 Configuration|Define the information showed on terminal|[Click Here](Bashrc/README.md)
-
-### TERMINAL
-
-* We are going to use URXVT terminal
-* Installing: `sudo pacman -S rxvt-unicode`
-* Configuration File: **~/.Xresources**
-* Restarting Configuration file: `xrdb ~/.Xresources`
-* Change font for my favorite on the file:
-    * For Regular: `Urxvt.font:    xft:xos4 Terminus:style=Regular:size=11`
-* Change Background: Background Color is #191919
-    * On the .Xresources: `Urxvt.background: [100]#191919`
-* Change Cursor Type: `Urxvt*cursorUnderline: true` 
+| Program | Use for | My Configuration | Status |
+|---|---|---|---|
+| Color Configuration| Define the System Colors| [Click Here](Colors/README.md) | :heavy_check_mark:
+| Git Configurations|Define Shell Git configurations|[Click Here](Git/README.md)|:heavy_check_mark:
+| My Font - xos4 Terminus|Define my favorite Font|[Click Here](Terminus_Font/README.md)| :heavy_check_mark:
+| My PS1 Configuration|Define the information showed on terminal|[Click Here](Bashrc/README.md)|:heavy_check_mark:
+| Cmus|	Program to run music on terminal|[Click Here](Cmus/README.md)|:heavy_check_mark:
+| Conky| Program to show system information on Desktop|[Click Here](Conky/README.md)|:heavy_check_mark:
+| Urxvt Terminal| Terminal 100% customizable|[Click Here](Urxvt/README.md)|:heavy_check_mark:
 
 ### QUTEBROWSER
 
@@ -84,31 +75,6 @@
 	* Insert on the config file from i3 = `exec --no-startup-id picom`	
 	* Restart the System: Mod4 + SHIFT + E`
 
-### CONKY BASE CONFIGURATION
-
-* The themes from Conky on Manjary is in **/usr/share/conky**
-* The _conky1.10__shortcuts_themeName_ is themes from the Shortcut
-* The _conky_themeName_ is the theme from the information on the screen
-* After doing this two files, on the **/usr/bin** create a **start_conky_themeName**
-* Call the files like that:
-
-```sh
-#!/bin/bash
-
-conky -c /usr/share/conky/conky1.10_shortcuts_themeName &&
-conky -c /usr/share/conky/conky_themeName &&
-exit 0
-```
-* Make this file Runnable: chmod +x start_conky_themeName
-
-* Call this file on our i3 config file: **~/.i3/config**
-
-```sh
-exec --no-startup-id start_conky_themeName
-```
-
-* My configuration is in **Conky** Directory
-* Now, my system is now only on **conky_fanto** configuration on the **start_conky_fanto**
 
 ### i3 BLOCKS
 
@@ -242,8 +208,19 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 ```
 * Comment all bar{} part on the i3 config file
 
-### CMUS
+### VIM PLUGINS
 
-* cmus is a lightweight program to listen music from terminal.
-* DOWNLOAD: `sudo pacman -S cmus`
-* CONFIG FILE: **~/.config/cmus** 
+* we can add vim plugins using vim-plug
+* It's a minimalist plugins installations to vim
+* take the **plug.vim** on my **vim** directory and put on **~/.vim/autoload**
+* now put this command on terminal:
+
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+* now go to **/etc/vimrc** and put inside the plugin, like the lightline
+
+```sh
+Plug 'itchyny/lightline.vim'
+```
+* Open your vimll
