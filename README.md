@@ -8,16 +8,13 @@
 
 
 
-### PROGRAMS I USE
+### PROGRAMS I KEEP BASICS
 
 | Name | Use for | Command | Config File Location
 |---|---|---|---|
-| Ranger | GUI look on directories from terminal(to exit press <kbd>Q</kbd>)|ranger|**~/.config/ranger/rc.conf**
-| Scrot  | screenshot the scren from terminal | scrot -d 10 (10 seconds to take screenshot)| None 
-| Nitrogen | To change the wallpaper from Desktop | nitrogen directory/with/images | None
-| Picom  | To make the Shells transparent | picom | **~/.config/picom.conf**
-| Conky | Showing information on Desktop | sudo pacman -S conky-all |  
-| QuteBrowser | sudo pacman -S qutebrowser | <kbd>Mod4</kbd> + <kbd>F2</kbd>|**~/.config/qutebrowser/config.py**
+| Ranger | GUI look on directories from terminal(to exit press <kbd>Q</kbd>)|`ranger`|**~/.config/ranger/rc.conf**
+| Scrot  | screenshot the scren from terminal | `scrot -d 10 (10 seconds to take screenshot)`| None 
+| Nitrogen | To change the wallpaper from Desktop | `nitrogen directory/with/images` | None
 | Gtop | sudo pacman -S npm && npm install gtop -g | `gtop`|None
 
 ### MY CONFIGURATIONS

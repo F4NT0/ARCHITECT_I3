@@ -21,8 +21,8 @@ exec --no-startup-id start_conky_fanto
 
 * Image from my configuration:
 
-<img src="images/conky.png">
+<img src="../images/conky.png">
 
 ### Old Conky
 
-* itś just the basic configuration from Conky
+* it's just the basic configuration from Conky
