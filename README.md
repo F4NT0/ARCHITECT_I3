@@ -30,29 +30,7 @@
 | Urxvt Terminal| Terminal 100% customizable|[Click Here](Urxvt/README.md)|:heavy_check_mark:
 | Cli-visualizer| Sound visualization on Terminal |[Click Here](Cli-visualizer/README.md)|:heavy_check_mark:
 | Qutebrowser | Command-Line Browser |[Click Here](Qutebrowser/README.md)|:heavy_check_mark:
-
-### PICOM
-
-* Picom is to make the Terminal Transparent
-* INSTALLATION: `sudo pacman -S picom`
-* CONFIGURATION FILE:
-	* Move the file _picom.conf_ from **/etc/xdg/** to **~/.config/**
-	* Move the file _picon.conf.example_ from **/etc/xdg/** to **~/.config/**
-
-* CONFIGURATION ON PICOM CONF:
-	* blur-background-frame = true;
-	* inactive-opacity = 1;
-	* active-opacity = 1;
-	* frame-opacity = 1;
-	* opacity-rule = ["90:class_g = 'URxvt'","90:class_g = 'qutebrowser'"]
-
-* TEST CONFIGURATION:
-	* `picom --config ~/.config/picom.conf`
-
-* CONFIGURATION ON I3: 
-	* Insert on the config file from i3 = `exec --no-startup-id picom`	
-	* Restart the System: Mod4 + SHIFT + E`
-
+| Picom | Program to make windows transparent|[Click Here](Picom/README.md)|:heavy_check_mark:
 
 ### i3 BLOCKS
 
