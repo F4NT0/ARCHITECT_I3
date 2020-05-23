@@ -62,3 +62,4 @@
 | you can enter the playlist and see the musics                |
 | 6. to delete a playlist: select the playlist                 |
 | and click delete                                             |
+|--------------------------------------------------------------|

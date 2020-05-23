@@ -35,41 +35,41 @@ GLOSSARY: Mod4 is the Windows logo on the Keyboard
  __________________________________________________
 | 	COMMAND              |          USE FOR        |
 |------------------------|-------------------------|
-| Mod4 + SHIFT + J       | Move Window to Left     |
+| Mod4 + SHIFT + j       | Move Window to Left     |
 |------------------------|-------------------------|
 | Mod4 + SHIFT + ;       | Move Window to Right    |
 |------------------------|-------------------------|
-| Mod4 + SHIFT + K       | Move Window to Down     |
+| Mod4 + SHIFT + k       | Move Window to Down     |
 |------------------------|-------------------------|
-| Mod4 + SHIFT + L       | Move WIndow to Up       |
+| Mod4 + SHIFT + l       | Move WIndow to Up       |
 |________________________|_________________________|
 
        COMMANDS TO OPEN/CLOSE AND RESTART/EXIT
  ___________________________________________________
 |       COMMAND          |        USE FOR           |
 |------------------------|--------------------------|
-| Mod4 + D               | Open Application Launcher|
+| Mod4 + d               | Open Application Launcher|
 |------------------------|--------------------------|
-| Mod4 + SHIFT + Q       | Kill the actual Window   |
+| Mod4 + SHIFT + q       | Kill the actual Window   |
 |------------------------|--------------------------|
-| Mod4 + SHIFT + C       | Reload the i3 Config File|
+| Mod4 + SHIFT + c       | Reload the i3 Config File|
 |------------------------|--------------------------|
-| Mod4 + SHIFT + E       | Exit i3 totally          |
+| Mod4 + SHIFT + e       | Exit i3 totally          |
 |------------------------|--------------------------|
-| Mod4 + SHIFT + R       | Restart i3 totally       |
+| Mod4 + SHIFT + r       | Restart i3 totally       |
 |________________________|__________________________|
 
        	COMMAND TO MODIFY WINDOWS
  ____________________________________________________
 |       COMMAND          |            USE FOR        |
 |------------------------|---------------------------|
-| Mod4 + F               |  Toggle Fullscreen        |
+| Mod4 + f               |  Toggle Fullscreen        |
 |------------------------|---------------------------|
-| Mod4 + V               | Split Window Vertically   |
+| Mod4 + v               | Split Window Vertically   |
 |------------------------|---------------------------|
-| Mod4 + H               | Split Window Horizontally |
+| Mod4 + h               | Split Window Horizontally |
 |------------------------|---------------------------|
-| Mod4 + R               | Resize Mode to Window     |
+| Mod4 + r               | Resize Mode to Window     |
 |________________________|___________________________|
 
 	COMMAND TO FLOATING WINDOWS
