@@ -1,19 +1,20 @@
-# THE MODIFICATIONS MADED ON THE QUTEBROWSER
+# QUTEBROWSER - THE COMMAND-LINE BROWSER
 
+* The best Browser to use with command-line
+* DOWNLOAD: `sudo pacman -S qutebrowser`
+* CREATING DEFAULT CONFIGURATION FILE:
+	* You need to go to **~/.config/qutebrowser/**
+	* Create the file _config.py_ on this Directory
+	* Open qutebrowser and call this command: `:config-write-py --defaults`
+	* After doing the modifications, call this command on the qutebrowser: `:config-source`
 
-* Main Config File Location: **~/.config/qutebrowser/config.py**
-* If not exist yet, put this command on qutebrowser: `:config-write-py --defaults`
-* To load the qutebrowser after modifications: `:config-source`
+* My Configuration is in the **config.py** file
+* The Cheat-sheet of command is [HERE](Cheat-Sheets/qute_commands.txt)
+* I create a Keyboard shortcut to open Qutebrowser on i3wm
 
-### Colors
-
-Active Tab Background: Orange: `#FFA500`
-Inactive Tab Background: Dark Gray: `#191919`
-Text Color: White: `#E5E5E5`
-URL Color Loading: Light Blue: `#ADD8E6`
-URL Loaded: Green: `#008000`
-URL with Error: Red: `#FF0000`
-URL with Warning: Yellow: `#FFFF00`
+```sh
+bindsym $mod+F2 exec qutebrowser
+```
 
 ### Dark Mode on Qutebrowser
 
