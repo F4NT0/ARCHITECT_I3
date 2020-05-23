@@ -223,4 +223,17 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 ```sh
 Plug 'itchyny/lightline.vim'
 ```
-* Open your vimll
+* Open your vim
+
+
+### CLI_VISUALIZER - TO SEE SOUND ON TERMINAL
+
+* clone the cli_visualizer:
+	* `git clone https://github.com/dpayne/cli-visualizer.git` 
+* install the packages needed:
+  * `sudo pacman -S ncurses fftw cmake`
+* enter the Directory **cli_visualizer** and run **./install**
+* After downloading everything, just go to shell and call this command:
+	* `vis`
+* the configuration file is **~/.config/vis/config**
+* My configuration is in **Cli_visualizer** Directory
