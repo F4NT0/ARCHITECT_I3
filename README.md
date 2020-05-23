@@ -31,50 +31,7 @@
 | Cli-visualizer| Sound visualization on Terminal |[Click Here](Cli-visualizer/README.md)|:heavy_check_mark:
 | Qutebrowser | Command-Line Browser |[Click Here](Qutebrowser/README.md)|:heavy_check_mark:
 | Picom | Program to make windows transparent|[Click Here](Picom/README.md)|:heavy_check_mark:
-
-### i3 BLOCKS
-
-* i3 block is a status line to i3 enviroment
-* INSTALLATION: sudo pacman -S i3blocks
-* CONFIGURATION FILE LOCATION: **/etc/i3blocks.conf**
-* the font you put on **~/.i3/config** as:
-	* `font 'xft:xos4 Terminus:size=11'`
-
-* My Configuration on i3blocks:
-
-```sh
-#Check in 5 to 5 seconds
-[battery]
-command=echo "Battery: $(acpi -b | grep -E -o '[0-9][0-9]?%')"
-interval=2
-```
-
-* Check my IP
-
-```sh
-[ip]
-color=#FFC966
-command=echo -e "IP: $(hostname -i)"
-interval=5
-```
-* Always needed the interval option
-
-* Check Disk Available
-
-```sh
-[disk]
-color=#FFB732
-command=echo "Disk Available: $(df -H --output=avail /dev/sda1 | grep -o '[0-9]*[G]')"
-interval=1
-```
-* time
-
-```sh
-[time]
-command=date '%Y-%m-%d %H:%M:%S'
-interval=1
-
-```
+| i3-blocks| status bar to i3|[Click Here](i3_blocks/README.md)|:x:
 
 ### VIM CONFIGURATION
 
