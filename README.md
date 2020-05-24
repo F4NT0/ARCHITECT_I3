@@ -33,26 +33,9 @@
 | Picom | Program to make windows transparent|[Click Here](Picom/README.md)|:heavy_check_mark:
 | i3-blocks| status bar to i3|[Click Here](i3_blocks/README.md)|:x:
 | vim | the best text editor for Terminal|[Click Here](VIM/README.md)|:heavy_check_mark:
+| Neofetch | show info from system on terminal|[Click Here](Neofetch/README.md)|:heavy_check_mark:
+| Pulseaudio and Pavucontrol| Sound System on my i3|[Click Here](Pulseaudio/README.md)
 
-
-### SOUND - PULSEAUDIO WITH PAVUCONTROL
-* First we need to download pulseaudio = `sudo pacman -S pulseaudio`
-* Second we download pavucontrol = `sudo pacman -S pavucontrol`
-* Restart the Computer = `shutdown -r now`
-* To use the system, write on the Shell the Following command: `pavucontrol`
-* I create a file on **~/.config/pulse/launch.sh** with the following:
-
-```sh
-pulseaudio --kill
-pulseaudio --start 
-```
-* I create a command to the i3 configuration to call this file:
-
-```sh
-exec --no-startup ~/.config/pulse/launch.sh
-bindsym $mod+Ctrl+m exec pavucontrol
-```
-* if the sound doesn't work, stop with `pulseaudio --kill` and then `pulseaudio --start`
 
 ### PCMANFM
 
