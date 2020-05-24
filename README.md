@@ -32,30 +32,7 @@
 | Qutebrowser | Command-Line Browser |[Click Here](Qutebrowser/README.md)|:heavy_check_mark:
 | Picom | Program to make windows transparent|[Click Here](Picom/README.md)|:heavy_check_mark:
 | i3-blocks| status bar to i3|[Click Here](i3_blocks/README.md)|:x:
-
-### VIM CONFIGURATION
-
-* vimrc CONFIG FILE LOCATION: **/etc/vimrc**
-* Here some types of modifications
-
-```sh
-# Show number informations
-set number
-# Code Highlight
-syntax on
-# Tab space
-set tabstop=2
-# Autoindentation
-set autoindent
-```
-* Website to create colorscheme for VIM: http://bytefluent.com/vivify/
-* My Colorscheme is in **VIM** Directory on this Repo
-* WHERE TO PUT THE COLORSCHEME: **/usr/share/vim/vim82/colors**
-* AFTER OPEN YOUR VIMRC FILE AND PUT:
-
-```sh
-colorscheme <nameofthescheme>
-```
+| vim | the best text editor for Terminal|[Click Here](VIM/README.md)|:heavy_check_mark:
 
 ### NEOFETCH
 
@@ -120,33 +97,3 @@ bindsym $mod+Ctrl+m exec pavucontrol
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 ```
 * Comment all bar{} part on the i3 config file
-
-### VIM PLUGINS
-
-* we can add vim plugins using vim-plug
-* It's a minimalist plugins installations to vim
-* take the **plug.vim** on my **vim** directory and put on **~/.vim/autoload**
-* now put this command on terminal:
-
-```sh
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-* now go to **/etc/vimrc** and put inside the plugin, like the lightline
-
-```sh
-Plug 'itchyny/lightline.vim'
-```
-* Open your vim
-
-
-
-
-
-
-
-
-
-
-
-
-
