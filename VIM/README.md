@@ -3,6 +3,8 @@
 * VIM is an text editor for terminal very expansible
 * It's the best editor you can use, but the most hardwork you need to make
 
+<img src="../images/vim.png">
+
 ### INFORMATIONS
 
 * On my i3 the informations about vim is found in this locations

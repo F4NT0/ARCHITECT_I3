@@ -34,27 +34,14 @@
 | i3-blocks| status bar to i3|[Click Here](i3_blocks/README.md)|:x:
 | vim | the best text editor for Terminal|[Click Here](VIM/README.md)|:heavy_check_mark:
 | Neofetch | show info from system on terminal|[Click Here](Neofetch/README.md)|:heavy_check_mark:
-| Pulseaudio and Pavucontrol| Sound System on my i3|[Click Here](Pulseaudio/README.md)
+| Pulseaudio and Pavucontrol| Sound System on my i3|[Click Here](Pulseaudio/README.md)|:heavy_check_mark:
+| Polybar| My Status Bar on i3|[Click Here](Polybar/README.md)|:heavy_check_mark:
 
 
-### PCMANFM
+### INFOS TO DO
 
-* pcmanfm is a GUI visualization for i3, to see all files and archives
-* INSTALLATION: it already comes with manjaro i3, but you can install with: `sudo pacman -S pcmanfm`
-* CONFIGURATION FILE: 
+Name | Status
+|---|---|
+PCMANFM|:construction:
+Ranger|:construction:
 
-### POLYBAR
-
-* Polybar is to apresent some information on desktop
-* INSTALLATION: `sudo pacman -S polybar`
-* Send the config to **~/.config/polybar**: `install -Dm644 /usr/share/doc/polybar/config ~/.config/polybar/`
-* to test the example you go to the _.config/polybar/_ and use this command: `polybar example`
-* I create my example from the Github Repo of Polybar
-* My config file is in the **Polybar** Directory
-* Create the _launch.sh_ to call on i3 and it is in the **Polybar** Directory too
-* Make Runnable: `chmod +x launch.sh`
-* Call the file on i3 config:
-```sh
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-```
-* Comment all bar{} part on the i3 config file
