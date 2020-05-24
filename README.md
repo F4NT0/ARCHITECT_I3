@@ -7,16 +7,6 @@
 * [QUTEBROWSER](Cheat-Sheets/qute_commands.txt)
 * [CMUS](Cheat-Sheets/cmus_command.txt)
 
-
-### PROGRAMS I KEEP BASICS
-
-| Name | Use for | Command | Config File Location
-|---|---|---|---|
-| Ranger | GUI look on directories from terminal(to exit press <kbd>Q</kbd>)|`ranger`|**~/.config/ranger/rc.conf**
-| Scrot  | screenshot the scren from terminal | `scrot -d 10 (10 seconds to take screenshot)`| None 
-| Nitrogen | To change the wallpaper from Desktop | `nitrogen directory/with/images` | None
-| Gtop | sudo pacman -S npm && npm install gtop -g | `gtop`|None
-
 ### MY CONFIGURATIONS
 
 | Program | Use for | My Configuration | Status |
@@ -44,4 +34,6 @@ Name | Status
 |---|---|
 PCMANFM|:construction:
 Ranger|:construction:
-
+Gtop|:construction:
+Nitrogen|:construction:
+Scrot|:construction:
