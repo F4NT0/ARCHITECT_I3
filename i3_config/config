@@ -1,11 +1,12 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+#-------------------------
+# Set Basic Configuration
+#-------------------------
+
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
-
-# set default desktop layout (default is tiling)
-# workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 2
@@ -13,9 +14,6 @@ default_floating_border normal
 
 # Hide borders
 hide_edge_borders none
-
-# Picom configuration
-exec --no-startup-id picom
 
 # change borders
 bindsym $mod+u border none
@@ -29,6 +27,10 @@ font 'xft:xos4 Terminus:style=Regular:size=11'
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
+#---------------------------
+# Basic Commands to Terminal
+#---------------------------
+
 # start a terminal
 bindsym $mod+Return exec terminal
 
@@ -41,34 +43,37 @@ bindsym $mod+d exec --no-startup-id dmenu_recency
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
-################################################################################################
-## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
-################################################################################################
+#--------------
+#sound-section
+#--------------
 
-exec --no-startup-id pulseaudio
+exec --no-startup-id ~/.config/pulse/launch.sh
 bindsym $mod+Ctrl+m exec pavucontrol 
 
-################################################################################################
-
-# Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-
+#--------------------
 # Start Applications
+#--------------------
+
+# bmenu
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+# brownser qutebrowser
 bindsym $mod+F2 exec qutebrowser
+# GUI visualization from folders
 bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-bindsym $mod+F5 exec terminal -e 'mocp'
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+# Print Screen all screen
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+# Help PDF from Manjaro
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
-bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+# Picom
+exec --no-startup-id picom
+# Polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-# focus_follows_mouse no
+#-------------------------------------
+# Command to interact on visualization
+#--------------------------------------
 
 # change focus
 bindsym $mod+j focus left
@@ -128,6 +133,10 @@ bindsym $mod+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
 
+#-----------
+# WORKSPACE
+#-----------
+
 #navigate workspaces next / previous
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
@@ -175,12 +184,6 @@ bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
-# Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
-
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
@@ -213,6 +216,10 @@ for_window [class="Xfburn"] floating enable
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
+#--------------------
+# Reload/Restart/Exit
+#--------------------
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
@@ -239,6 +246,11 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
+
+#---------------
+# Resize Windows
+#----------------
+
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -263,23 +275,30 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+#-------------
 # Lock screen
+#-------------
+
 bindsym $mod+9 exec --no-startup-id blurlock
 
-# Autostart applications
+#-----------------------
+# Autostart Applications
+#------------------------
+
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
-# exec --no-startup-id blueman-applet
-# exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_fanto
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
+#----------------
+# Color Pallette
+#----------------
+#
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
@@ -311,39 +330,45 @@ set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
+#--------------------
+# i3bar and i3status
+#--------------------
+
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3blocks
-	position bottom
+#bar {
+	#i3bar_command i3bar
+	#status_command i3blocks
+#	position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
-  font 'xft:xos4 Terminus:size=20'
-	strip_workspace_numbers yes
+#	bindsym button4 nop
+#	bindsym button5 nop
+#	strip_workspace_numbers yes
 
-    colors {
-        background #191919
-        statusline #329932
-        separator  #e5e5e5
+ #   colors {
+ #       background #191919
+ #       statusline #329932
+ #       separator  #e5e5e5
 
 #                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
-    }
-}
+ #       focused_workspace  #E5E5E5 #329932 #E5E5E5
+ #       active_workspace   #191919 #353836 #FDF6E3
+ #       inactive_workspace #595B5B #222D31 #EEE8D5
+ #       binding_mode       #16a085 #2C2C2C #F9FAF9
+ #       urgent_workspace   #16a085 #FDF6E3 #E5201D
+ #   }
+#}
 
 # hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
+#bindsym $mod+m bar mode toggle
 
+#--------------
 # Theme colors
+#--------------
+
 # class                   border  backgr. text    indic.   child_border
   client.focused          #800080 #556064 #80FFF9 #FDF6E3  #329932
   client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
@@ -353,9 +378,9 @@ bindsym $mod+m bar mode toggle
 
   client.background       #191919
 
-#############################
-### settings for i3-gaps: ###
-#############################
+#----------------------------
+#   settings for i3-gaps:
+#----------------------------
 
 # Set inner/outer gaps
 gaps inner 14
