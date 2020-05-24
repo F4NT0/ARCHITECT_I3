@@ -34,28 +34,6 @@
 | i3-blocks| status bar to i3|[Click Here](i3_blocks/README.md)|:x:
 | vim | the best text editor for Terminal|[Click Here](VIM/README.md)|:heavy_check_mark:
 
-### NEOFETCH
-
-* CONFIGURATION FILE LOCATION: **~/.config/neofetch/config.conf**
-* inside this file, there is the part of the font colors
-* I insert the w3m settings downloaded: `sudo pacman -S w3m`
-	* This serves to insert image on neofetch
-* i putted like this:
-
-```sh
-#order: tittle,@,underline,subtittle,colon,info
-colors=(2 2 2 2 2 7) #green
-
-#Image source
-image_source="w3m"
-
-#Ascii Distro
-ascii_distro="~/Imagens/Wallpapers/manjaro_neofetch.png"
-
-"Ascii color
-ascii_colors(2)
-```
-* My configuration is on **Neofetch** Directory
 
 ### SOUND - PULSEAUDIO WITH PAVUCONTROL
 * First we need to download pulseaudio = `sudo pacman -S pulseaudio`
