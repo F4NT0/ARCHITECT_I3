@@ -2,6 +2,8 @@
 
 * Polybar is the best system to create a Status Bar on i3
 
+<img src="../images/polybar.png">
+
 ### INSTALLATION
 
 * `sudo pacman -S polybar`

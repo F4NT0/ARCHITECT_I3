@@ -3,6 +3,8 @@
 * Pulseaudio is the system i choose to make my sound on i3
 * Pavucontrol is to control the volume from pulseaudio
 
+<img src="../images/pavucontrol.png">
+
 |ABOUT|INFO
 |---|---|
 DOWNLOAD PULSEAUDIO|`sudo pacman -S pulseaudio`
