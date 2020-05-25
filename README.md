@@ -27,13 +27,23 @@
 | Pulseaudio and Pavucontrol| Sound System on my i3|[Click Here](Pulseaudio/README.md)|:heavy_check_mark:
 | Polybar| My Status Bar on i3|[Click Here](Polybar/README.md)|:heavy_check_mark:
 
+### IMPORTANT INFOS
 
-### INFOS TO DO
+* This infos is to just use better your manjaro i3
 
-Name | Status
-|---|---|
-PCMANFM|:construction:
-Ranger|:construction:
-Gtop|:construction:
-Nitrogen|:construction:
-Scrot|:construction:
+* Change the Wallpaper: 
+	* Go to your Directory with the images
+	* use the program Nitrogen to define the wallpaper: `nitrogen .`
+	
+* See Markdown Files:
+	* Open your Markdown file with `xdg-open`: `xdg-open file.md`
+
+* See GUI Directories and Files:
+	* **pcmanfm** is a program to see files in GUI
+	* Open a Directory with `xdg-open` and the program starts
+
+* Screenshot:
+	* to take screenshot on the system, we use **scrot** program
+	* to take screenshot from all, use the <kbd>Prt Sc</kbd>
+	* You can see all commands use this command on terminal: `man scrot`
+
