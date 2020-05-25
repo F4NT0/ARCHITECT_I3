@@ -1,4 +1,4 @@
-# CONFIGURATIONS ON MANJARO I3
+# Welcome to my Configuration!
 
 <img src="images/unixporn_image.png">
 
