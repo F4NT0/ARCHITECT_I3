@@ -2,6 +2,9 @@
 
 * Cmus is a lightweight to listen music from terminal
 
+<img src="../images/cmus.png">
+
+
 |INFO|WHAT TO DO|
 |---|---|
 |INSTALLATION| `sudo pacman -S cmus`

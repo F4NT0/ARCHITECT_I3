@@ -1,4 +1,6 @@
-# CREATING AND CONFIGURING AN MANJARO I3
+# CONFIGURATIONS ON MANJARO I3
+
+<img src="images/unixporn_image.png">
 
 ### MY CHEAT-SHEETS
 
@@ -46,4 +48,16 @@
 	* to take screenshot on the system, we use **scrot** program
 	* to take screenshot from all, use the <kbd>Prt Sc</kbd>
 	* You can see all commands use this command on terminal: `man scrot`
+
+### LINKS TO THE GITHUBS
+
+|Program|Official Github
+|---|---|
+Cmus|[https://github.com/cmus/cmus](https://www.github.com/cmus/cmus)
+Conky|[https://github.com/brndnmtthws/conky](https://www.github.com/brndnmtthws/conky)
+qutebrowser|[https://qutebrowser.org/index.html](https://qutebrowser.org/index.html)
+Cli-Visualizer|[https://github.com/dpayne/cli-visualizer](https://github.com/dpayne/cli-visualizer)
+Picom|[https://github.com/yshui/picom](https://github.com/yshui/picom)
+Neofetch|[https://github.com/dylanaraps/neofetch](https://github.com/dylanaraps/neofetch)
+Polybar|[https://github.com/polybar/polybar](https://github.com/polybar/polybar)
 
