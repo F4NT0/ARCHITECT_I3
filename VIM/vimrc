@@ -23,3 +23,5 @@ set autoindent
 " /usr/share/vim/vim82/colors/
 colorscheme fanto_vim_theme
 
+" KEEP THE LAST STATUS
+set laststatus=2

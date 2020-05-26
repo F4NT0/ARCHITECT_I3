@@ -9,7 +9,7 @@ if version > 580
 endif
 
 set t_Co=256
-let g:colors_name = "neverness_modified"
+let g:colors_name = "fanto_vim_theme"
 
 "hi SignColumn -- no settings --
 "hi TabLineSel -- no settings --
