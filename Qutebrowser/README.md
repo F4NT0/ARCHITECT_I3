@@ -24,3 +24,11 @@ bindsym $mod+F2 exec qutebrowser
 * then in the qutebrowser insert the following command: `:set content.user_stylesheet stylename.css`
 * the **stylename** on my system is **fanto_darktheme.css**
 
+### Qutebrowser Commands
+
+What is the Command|The Command
+|---|---|
+Reload the Active Page|**:reload** or <kbd>R</kbd>
+Back from the Previous Page|**:back**  or <kbd>Shif</kbd> + <kbd>H</kbd>
+Open Link on a New Tab|**:open -t Link** or <kbd>Shift</kbd> + <kbd>O</kbd> + Link
+
