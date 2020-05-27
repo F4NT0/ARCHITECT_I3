@@ -49,6 +49,18 @@
 	* to take screenshot from all, use the <kbd>Prt Sc</kbd>
 	* You can see all commands use this command on terminal: `man scrot`
 
+* Remove Palemoon:
+	* To Remove Palemoon,remove the _palemoon-bin_ package
+	* `sudo pacman -R palemoon-bin`
+
+
+### GOOD PROGRAMS TO USE
+
+For What|Program|How to Download|Info
+|---|---|---|---|
+Minimalist Video Player for Linux|MPV|`sudo pacman -S mpv`|[Click Here](MPV/README.md)
+See all files from terminal|Ranger|`sudo pacman -S ranger`|[Click Here](Ranger/README.md)
+
 ### LINKS TO THE GITHUBS
 
 |Program|Official Github
