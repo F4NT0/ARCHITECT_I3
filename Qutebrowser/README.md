@@ -50,6 +50,7 @@ Change Between Tabs||<kbd>Alt</kbd> + <kbd>Number</kbd>
 * Use this commands in that order
 
 |Order|Info|Command|
+|---|---|
 |1|Save the Active Tab Link|<kbd>M</kbd>
 |2|Open the Quickmark on your Active Tab|<kbd>B</kbd>
 
