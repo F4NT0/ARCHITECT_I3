@@ -28,6 +28,8 @@ bindsym $mod+F2 exec qutebrowser
 
 * I create on my i3 the command <kbd>Mod4</kbd> + <kbd>F2</kbd> to Open Qutebrowser
 
+**Interaction**
+
 What is the Command|The Command|Active Command from Keyboard
 |---|---|---|
 Reload the Active Page|**:reload**|<kbd>R</kbd>
@@ -39,6 +41,8 @@ Insertion Mode to enter Text||<kbd>I</kbd>
 Back to Main Page||<kbd>Ctrl</kbd> + <kbd>H</kbd>
 Open the Active Tab in another window||<kbd>G</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
 Close The Active Tab||<kbd>D</kbd>
+Change Between Tabs||<kbd>Alt</kbd> + <kbd>Number</kbd>
+
 
 **Quickmark**
 
@@ -49,5 +53,11 @@ Close The Active Tab||<kbd>D</kbd>
 |1|Save the Active Tab Link|<kbd>M</kbd>
 |2|Open the Quickmark on your Active Tab|<kbd>B</kbd>
 
+**Copy and Paste**
+
+What is the Command|From the Keyboard
+|---|---|
+Copy URL|<kbd>Y</kbd> + <kbd>Y</kbd>
+Open URL on New Tab|<kbd>Shift</kbd> + <kbd>P</kbd> + <kbd>P</kbd>
 
 
