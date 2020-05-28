@@ -26,9 +26,28 @@ bindsym $mod+F2 exec qutebrowser
 
 ### Qutebrowser Commands
 
-What is the Command|The Command
-|---|---|
-Reload the Active Page|**:reload** or <kbd>R</kbd>
-Back from the Previous Page|**:back**  or <kbd>Shif</kbd> + <kbd>H</kbd>
-Open Link on a New Tab|**:open -t Link** or <kbd>Shift</kbd> + <kbd>O</kbd> + Link
+* I create on my i3 the command <kbd>Mod4</kbd> + <kbd>F2</kbd> to Open Qutebrowser
+
+What is the Command|The Command|Active Command from Keyboard
+|---|---|---|
+Reload the Active Page|**:reload**|<kbd>R</kbd>
+Back from the Previous Page|**:back**|<kbd>Shif</kbd> + <kbd>H</kbd>
+Open Link on a New Tab|**:open -t Link**|<kbd>Shift</kbd> + <kbd>O</kbd>
+Open Link on the Active Tab|**:open Link**|<kbd>O</kbd>
+Open Link on a New Window|**:open -w Link**|<kbd>W</kbd> + <kbd>O</kbd>
+Insertion Mode to enter Text||<kbd>I</kbd>
+Back to Main Page||<kbd>Ctrl</kbd> + <kbd>H</kbd>
+Open the Active Tab in another window||<kbd>G</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
+Close The Active Tab||<kbd>D</kbd>
+
+**Quickmark**
+
+* Quickmark is used to save pages and open quickly when needed
+* Use this commands in that order
+
+|Order|Info|Command|
+|1|Save the Active Tab Link|<kbd>M</kbd>
+|2|Open the Quickmark on your Active Tab|<kbd>B</kbd>
+
+
 
