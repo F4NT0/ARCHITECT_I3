@@ -7,6 +7,13 @@
 * TaskWarrior is very simple too use
 * You can add a Priority to your tasks as (H)igh,(M)edium or (L)ow
 
+### Simple time task
+
+**Task with Due Date**
+
+* task add To-Do due:year-month-dayThour:minute priority:H
+
+
 #### Tasks
 
 |Example|Command
@@ -14,6 +21,7 @@
 Simple Task|`task add my task_info`
 Modify Task|`task ID modify task_info`
 Complete Task|`task ID done`
+Delete Task|`task ID delete`
 Define Priority to your Tasks|`task add task_info priority:H`
 Task with due date|`task add task-info due:Date(year-month-day)`
 Remove a due date|`task ID modify due:`
@@ -26,6 +34,7 @@ Search for Tasks with no Project|`task project: list`
 Verify all Projects|`task projects`
 Insert a Task on the Project|`task add project:project_name task_info`
 Count the number os Tasks on a Project|`task project:project_name count`
-
+Verify all Tasks from a project|`task project:project_name`
+Change task to other project|`task ID project:project_name`
 
 
