@@ -851,7 +851,7 @@ c.content.geolocation = 'ask'
 ##   - true
 ##   - false
 ##   - ask
-# c.content.media_capture = 'ask'
+c.content.media_capture = 'ask'
 
 ## Allow websites to lock your mouse pointer.
 ## Type: BoolAsk
@@ -877,13 +877,13 @@ c.content.geolocation = 'ask'
 ##   - true
 ##   - false
 ##   - ask
-# c.content.notifications = 'ask'
+c.content.notifications = 'ask'
 
 ## Allow pdf.js to view PDF files in the browser. Note that the files can
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-# c.content.pdfjs = False
+c.content.pdfjs = True
 
 ## Allow websites to request persistent storage quota via
 ## `navigator.webkitPersistentStorage.requestQuota`.
@@ -975,6 +975,10 @@ c.content.geolocation = 'ask'
 ## Type: Bool
 # c.content.xss_auditing = False
 
+#-------------------------
+# SAVE DIRECTORY DOWNLOADS
+#-------------------------
+
 ## Directory to save downloads to. If unset, a sensible OS-specific
 ## default is used.
 ## Type: Directory
@@ -987,7 +991,7 @@ c.content.geolocation = 'ask'
 
 ## Remember the last used download directory.
 ## Type: Bool
-# c.downloads.location.remember = True
+c.downloads.location.remember = True
 
 ## What to display in the download filename input.
 ## Type: String
@@ -1001,7 +1005,7 @@ c.content.geolocation = 'ask'
 ## handler is used. Any `{}` in the string will be expanded to the
 ## filename, else the filename will be appended.
 ## Type: String
-# c.downloads.open_dispatcher = None
+c.downloads.open_dispatcher = None
 
 ## Where to show the downloaded files.
 ## Type: VerticalPosition
@@ -1013,7 +1017,7 @@ c.content.geolocation = 'ask'
 ## Duration (in milliseconds) to wait before removing finished downloads.
 ## If set to -1, downloads are never removed.
 ## Type: Int
-# c.downloads.remove_finished = -1
+c.downloads.remove_finished = 5
 
 ## Editor (and arguments) to use for the `open-editor` command. The
 ## following placeholders are defined:  * `{file}`: Filename of the file
@@ -1024,9 +1028,9 @@ c.content.geolocation = 'ask'
 ## Type: ShellCommand
 # c.editor.command = ['gvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 
-#
+#--------------------------
 # FONTS AND ENCODING EDITOR
-#
+#--------------------------
 
 ## Encoding to use for the editor.
 ## Type: Encoding

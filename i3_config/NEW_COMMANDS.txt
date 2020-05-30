@@ -1,0 +1,57 @@
+=============================================
+MY NEW COMMANDS TO USE ON MY I3 CONFIGURATION
+=============================================
+
+Mod4 = the Windows Symbol
+
+OPEN NEW TERMINAL: Mod4 + t
+KILL THE TERMINAL: Mod4 + q
+START PROGRAM LAUNCHER: Mod4 + d
+START SOUND SYSTEM: Mod4 + Ctrl + m
+QUTEBROWSER START: Mod4 + F2
+FOLDER GUI VISUALIZATION: Mod4 + F3
+PRINTSCREEN ALL SCREEN: Print
+
+VISUALIZATION COMMANDS
+
+-> Focus 
+FOCUS LEFT: Mod4 + Left
+FOCUS DOWN: Mod4 + Down
+FOCUS UP: Mod4 + Up
+FOCUS RIGHT: Mod4 + Right
+
+-> Move
+MOVE LEFT: Mod4 + Shift + Left
+MOVE DOWN: Mod4 + Shift + Down
+MOVE UP: Mod4 + Shift + Up
+MOVE RIGHT: Mod4 + Shift + Right
+
+WORKSPACES
+
+-> Change Workspaces
+WORKSPACE BACK AND FORTH: Mod4 + b
+
+-> Navigate Between Workspaces
+Workspace 1 = Mod4 + 1
+Workspace 2 = Mod4 + 2
+Workspace 3 = Mod4 + 3
+Workspace 4 = Mod4 + 4
+Workspace 5 = Mod4 + 5
+Workspace 6 = Mod4 + 6
+Workspace 7 = Mod4 + 7
+Workspace 8 = Mod4 + 8
+
+-> Split Orientation
+SPLIT HORIZONTAL: Mod4 + h
+SPLIT VERTICAL: Mod4 + v
+
+-> FULLSCREEN
+
+PANEL FULLSCREEN: Mod4 + f
+
+-> FLOATING
+
+ENABLE/DISABLE PANEL FLOATING: Mod4 + Shift + Space
+CHANGE FOCUS BETWEEN FLOATING: Mod4 + Space
+
+
