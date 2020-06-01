@@ -70,12 +70,12 @@ ${color}Local IP${alignr 10}${color2}${addr wlp3s0}
 
 ${color}Useful Commands$font
 ${hr 1}
-${color}N3W SH3LL    -> ${color2}Mod4 + Enter
-${color}CLOS3 SCR33N -> ${color2}Mod4 + Shift + q
+${color}N3W SH3LL    -> ${color2}Mod4 + t
+${color}CLOS3 P4N3L -> ${color2} Mod4 + q
 ${color}OP3N BR0WS3R -> ${color2}Mod4 + F2 
-${color}SH3LL(VT) -> ${color2}Mod4 + v + Mod4 + Enter
-${color}SH3LL(HR) -> ${color2}Mod4 + h + Mod4 + Enter
-${color}R3SIZ3 -> ${color2}Mod4 + r + Arrows      
+${color}SH3LL(VT) -> ${color2}Mod4 + v + Mod4 + t
+${color}SH3LL(HR) -> ${color2}Mod4 + h + Mod4 + t
+${color}R3SIZ3 FLOAT-> ${color2}Mod4 + r + Arrows      
 ${color}SWITCH WORK  -> ${color2}Mod4 + Number 
 ${color}SEND TO WORK -> ${color2}Mod4 + Ctrl + Number 
 ${color}FULLSCR33N   -> ${color2}Mod4 + f
