@@ -7,7 +7,7 @@
 ;--------------------------
 
 [colors]
-background = #aa191919
+background = #aa000000
 foreground = #E5E5E5
 green = #329932
 alert = #FF0000
@@ -26,10 +26,10 @@ fixed-center = true
 bottom = true
 
 ;-> bar colors
-background = #aa191919
+background = #aa000000
 foreground = ${colors.foreground}
 
-; -> ines
+; -> lines
 line-size = 3
 line-color = #E5E5E5
 
@@ -46,7 +46,7 @@ module-margin-left = 1
 module-margin-right = 2
 modules-left = i3
 modules-center = date
-modules-right = pulseaudio battery
+modules-right = cpu memory wireless-network pulseaudio battery
 
 ; -> fonts
 font-0 = xos4 Terminus:style=Regular:size=9
@@ -121,6 +121,34 @@ time-alt = %H:%M:%S
 format-prefix-foreground = ${colors.foreground}
 ;label
 label = %date% | %time%
+
+;-----------
+; CPU MODULE
+;-----------
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+label = CPU %percentage%%
+
+;----------------
+; NETWORK MODULE
+;----------------
+[module/wireless-network]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+label-connected = WIFI > %essid%
+label-connected-foreground = ${colors.foreground}
+label-disconnected = NO WIFI
+label-disconnected-foreground = ${colors.alert}
+
+;-------
+; MEMORY
+;-------
+[module/memory]
+type = internal/memory
+interval = 1
+label = RAM > %mb_used% / %mb_free%
 
 ;--------------
 ; SOUND MODULE 

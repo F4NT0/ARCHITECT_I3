@@ -62,7 +62,7 @@ Minimalist Video Player for Linux|MPV|`sudo pacman -S mpv`|[Click Here](MPV/READ
 See all files from terminal|Ranger|`sudo pacman -S ranger`|[Click Here](Ranger/README.md)
 Torrent Download for the Command Line|Transmission-cli|`sudo pacman -S transmission-cli`|[Click Here](Transmission/README.md)
 To-do List on Terminal|TaskWarrior|`sudo pacman -S task`|[Click Here](TaskWarrior/README.md)
-
+See PDF Files|Zathura|`sudo pacman -S zathura`|[Click Here](Zathura/README.md)
 ### LINKS TO THE GITHUBS
 
 |Program|Official Github
