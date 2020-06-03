@@ -63,6 +63,11 @@ See all files from terminal|Ranger|`sudo pacman -S ranger`|[Click Here](Ranger/R
 Torrent Download for the Command Line|Transmission-cli|`sudo pacman -S transmission-cli`|[Click Here](Transmission/README.md)
 To-do List on Terminal|TaskWarrior|`sudo pacman -S task`|[Click Here](TaskWarrior/README.md)
 See PDF Files|Zathura|`sudo pacman -S zathura`|[Click Here](Zathura/README.md)
+Save the Desktop Screen|`sudo pacman -S recordmydesktop`|
+Record the Screen|Peek|`sudo pacman -S peek`|
+How to make Rectagles for TUI(Text User Interface)|[Click Heere](Terminus_Font/Symbols.txt)
+
+
 ### LINKS TO THE GITHUBS
 
 |Program|Official Github
