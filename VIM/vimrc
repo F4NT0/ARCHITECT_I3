@@ -25,3 +25,7 @@ colorscheme fanto_vim_theme
 
 " KEEP THE LAST STATUS
 set laststatus=2
+
+" INFORMATION FOR THE AUTOCOMPLETE
+set completeopt+=menuone
+set shortmess+=c

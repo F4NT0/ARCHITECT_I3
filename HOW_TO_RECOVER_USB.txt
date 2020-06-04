@@ -1,0 +1,12 @@
+COMO ZERAR UMA PENDRIVE
+
+1) Descubra qual o nome da sua pendrive:
+	1.1) use o comando lsblk
+	1.2) veja pelo tamanho qual a sua pendrive(x: /dev/sdb)
+
+2) Zere a Pendrive:
+	2.1) pegue o nome da pendrive e zere com esse comando
+	2.2) ex: `sudo dd if=/dev/zero of=/dev/sdb status=progress`  
+ 
+3) Desmonte a Partição: sudo umount /dev/sdb
+4) Formate para FAT32: sudo mkfs.vfat /dev/sdb

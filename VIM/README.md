@@ -68,3 +68,21 @@ set laststatus=2
 ```
 * Save and open other vim file and thats it!
 
+**MuComplete Plugin**
+
+* Create a Autocomplete options for VIM
+* Insert this line on the **.vimrc** file: 
+
+```sh
+Plug 'lifepillar/vim-mucomplete'
+```
+* Restart the file with: `:so %`
+* Set to install the Plugin with vim-plug: `:PlugInstall`
+* Define this variables on **/etc/vimrc**
+
+```sh
+set completeopt+=menuone
+set shortmess+=c
+```
+* For use, just want you need to complete, press <kbd>Tab</kbd>
+
