@@ -2,6 +2,13 @@
 
 * How to Install: `sudo pacman -S task`
 
+### Files
+
+Name of the File|Use for|Location
+|---|---|---|
+_.taskrc_|It's the Configuration file from task warrior|**~/.taskrc**
+
+
 ### How to used it
 
 * TaskWarrior is very simple too use

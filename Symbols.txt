@@ -8,17 +8,18 @@ Pode testar se o seu terminal suporta com esse comando: echo -e "\ucodigo"
 
 Código é o número
 
+ON VIM: when on insertion mode(Press i) and then use Ctrl + v to enter the Unicode mode, now you need to insert the code like: u2B1C
+
 -----------------------
  COMO FAZER UM QUADRADO
 -----------------------
 
 2B1C = Quadrado = ⬜
 250C = Parte de Cima do Quadrado da Esquerda = ┌
-2514 = Parte de Baixo do Quadrado da Esquerda = ட
+2514 = Parte de Baixo do Quadrado da Esquerda = └
 2510 = Parte de Cima do Quadrado da Direita = ┐
 2518 = Parte de Baixo do Quadrado da Direita = ┘
 2500 = Conexão da parte de cima e embaixo = ─
-2502 = Conexão da Parte de Baixo com a De cima = │
 05C0 = Conexão dos Lados = ׀
 
 Exemplo de Quadrado:
@@ -27,3 +28,11 @@ Exemplo de Quadrado:
 │ │
 │ │
 └─┘
+
+┌───────────────┐
+׀SIMBOLOS UTEIS ׀
+└───────────────┘
+
+
+
+
