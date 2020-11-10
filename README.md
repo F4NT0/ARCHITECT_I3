@@ -5,9 +5,9 @@
 ### MY CHEAT-SHEETS
 
 * [TMUX](Cheat-Sheets/TMUX_Commands.txt)
-* [I3 COMMANDS](Cheat-Sheets/i3_commands.txt)
-* [QUTEBROWSER](Cheat-Sheets/qute_commands.txt)
-* [CMUS](Cheat-Sheets/cmus_command.txt)
+* [I3 COMMANDS](Cheat-Sheets/I3_COMMANDS.txt)
+* [QUTEBROWSER](Cheat-Sheets/QUTEBROWSER.txt)
+* [CMUS](Cheat-Sheets/CMUS.txt)
 
 ### MY CONFIGURATIONS
 
